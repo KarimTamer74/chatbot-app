@@ -1,11 +1,13 @@
 import 'dart:developer';
 
+import 'package:chatbot_app/features/authentication/presentation/view_model/sign_in/sign_in_cubit.dart';
 import 'package:chatbot_app/features/home/presentation/views/home_view.dart';
 import 'package:chatbot_app/utils/constants.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'widgets/sign_in_view_body.dart';
-import 'package:flutter/material.dart';
 
 class SignInView extends StatelessWidget {
   const SignInView({super.key});
@@ -25,7 +27,10 @@ class SignInView extends StatelessWidget {
               if (snapshot.data == null || snapshot.data == true) {
                 return const HomeView();
               }
-              return const SignInViewBody();
+              return BlocProvider(
+                create: (context) => SignInCubit(),
+                child: const SignInViewBody(),
+              );
             }),
       ),
     );
