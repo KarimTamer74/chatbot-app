@@ -1,5 +1,6 @@
-import 'package:chatbot_app/features/onboarding/presentation/views/widgets/custom_text_button.dart';
-import 'package:chatbot_app/features/onboarding/presentation/views/widgets/get_started_button.dart';
+import 'package:chatbot_app/features/authentication/presentation/views/widgets/custom_elevated_button.dart';
+import 'package:chatbot_app/utils/constants.dart';
+import 'package:chatbot_app/utils/functions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../data/page_view_content.dart';
@@ -7,24 +8,30 @@ import 'onboarding_title_and_descr_sectiont.dart';
 import 'onboarding_view_body.dart';
 import 'page_change_point.dart';
 
-class PageViewBody extends StatelessWidget {
+class PageViewBody extends StatefulWidget {
   const PageViewBody({super.key, required this.index});
   final int index;
+
+  @override
+  State<PageViewBody> createState() => _PageViewBodyState();
+}
+
+class _PageViewBodyState extends State<PageViewBody> {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Expanded(
-          flex: 2,
+          flex: 1,
           child: Image.asset(
-            onboardingList[index].image,
+            onboardingList[widget.index].image,
             fit: BoxFit.fill,
           ),
         ),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * .03,
         ),
-        OnboardingTitleAndDescSection(index: index),
+        OnboardingTitleAndDescSection(index: widget.index),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * .03,
         ),
@@ -33,8 +40,29 @@ class PageViewBody extends StatelessWidget {
           height: MediaQuery.sizeOf(context).height * .05,
         ),
         currentIndex == 2
-            ? const GetStartedButton()
-            : const ContinueTextButton(),
+            ? CustomElevatedButton(
+                buttonText: 'Get Started',
+                onPressed: () async {
+                  await completeOnboardingView();
+                  // ignore: use_build_context_synchronously
+                  Navigator.of(context).pushReplacementNamed(signInView);
+                },
+              )
+            : CustomElevatedButton(
+                buttonText: 'Continue',
+                onPressed: () {
+                  setState(
+                    () {
+                      if (currentIndex < 2) {
+                        currentIndex = currentIndex + 1;
+                        pageController.animateToPage(currentIndex,
+                            duration: const Duration(milliseconds: 400),
+                            curve: Curves.ease);
+                      }
+                    },
+                  );
+                },
+              ),
         SizedBox(
           height: MediaQuery.sizeOf(context).height * .05,
         ),
