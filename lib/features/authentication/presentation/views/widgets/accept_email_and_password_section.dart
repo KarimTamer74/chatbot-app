@@ -1,30 +1,30 @@
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AcceptEmailAndPasswordSection extends StatelessWidget {
   const AcceptEmailAndPasswordSection(
-      {super.key, required this.onEmailChanged, required this.onPasswordChanged,});
-  final Function(String) onEmailChanged;
-final Function(String) onPasswordChanged;
+      {super.key, required this.emailController, required this.passwordController,});
+final TextEditingController emailController, passwordController;
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return  Column(
       children: [
-        CustomTextFormField(
+         CustomTextFormField(
           labelText: 'Email',
           hintText: 'Enter your email',
           iconData: Icons.email,
-          onChanged:onEmailChanged
+            controller: emailController,
         ),
-        const SizedBox(
-          height: 10,
+          SizedBox(
+          height: 10.h,
         ),
-        CustomTextFormField(
+          CustomTextFormField(
           labelText: 'Password',
           hintText: 'Enter your password',
           iconData: Icons.lock,
-          onChanged: 
-       onPasswordChanged
+          controller: passwordController,
+
         )
       ],
     );

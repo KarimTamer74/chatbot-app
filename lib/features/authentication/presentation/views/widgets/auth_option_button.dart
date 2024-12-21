@@ -17,18 +17,9 @@ class AuthOptionButton extends StatelessWidget {
         return ElevatedButton(
           onPressed: () {},
           style: ElevatedButton.styleFrom(
-            padding: EdgeInsets.only(
-              top: 8,
-              bottom: 8,
-              right: screenWidth * 0.05, // Responsive padding
-            ),
-            minimumSize: const Size(double.infinity, 20),
-            maximumSize: const Size(double.infinity, 55),
-            backgroundColor: const Color(0xff242125),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(screenWidth * 0.05),
-            ),
-          ),
+              backgroundColor: AppColors.kGreyColor.withOpacity(.3),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20))),
           child: Row(
             children: [
               Expanded(
@@ -36,7 +27,7 @@ class AuthOptionButton extends StatelessWidget {
                   padding:
                       EdgeInsets.all(screenWidth * 0.02), // Responsive padding
                   decoration: BoxDecoration(
-                    color: AppColors.kWhiteColor,
+                    color: AppColors.kGreyColor.withOpacity(.0),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   child: AspectRatio(
@@ -52,9 +43,7 @@ class AuthOptionButton extends StatelessWidget {
               FittedBox(
                 child: Text(
                   text,
-                  style: Styles.textStyle22.copyWith(
-                    fontSize: screenWidth * 0.05, // Responsive text size
-                  ),
+                  style: Styles.textStyle22
                 ),
               ),
               const Spacer(),

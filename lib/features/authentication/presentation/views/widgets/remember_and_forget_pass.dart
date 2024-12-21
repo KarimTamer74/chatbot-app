@@ -1,6 +1,7 @@
-import 'package:chatbot_app/utils/app_colors.dart';
 import 'package:chatbot_app/utils/constants.dart';
+import 'package:chatbot_app/utils/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class RememberAndForgetPass extends StatefulWidget {
@@ -27,10 +28,10 @@ class _RememberAndForgetPassState extends State<RememberAndForgetPass> {
           },
           icon: isPressed
               ? const Icon(Icons.check_box)
-              : const Icon(
+              : Icon(
                   Icons.rectangle,
                   color: Colors.grey,
-                  size: 22,
+                  size: 22.sp,
                 ),
         ),
         TextButton(
@@ -42,7 +43,7 @@ class _RememberAndForgetPassState extends State<RememberAndForgetPass> {
           },
           child: Text(
             'Remember me',
-            style: TextStyle(color: AppColors.kWhiteColor, fontSize: 18),
+            style: Styles.textStyle16,
           ),
         ),
         const Spacer(),
@@ -50,7 +51,7 @@ class _RememberAndForgetPassState extends State<RememberAndForgetPass> {
           onPressed: () {},
           child: Text(
             'Forgot Password?',
-            style: TextStyle(color: AppColors.kWhiteColor, fontSize: 18),
+            style: Styles.textStyle16,
           ),
         )
       ],

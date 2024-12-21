@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SignUpUserAcceptData extends StatelessWidget {
-  const SignUpUserAcceptData({super.key, required this.onEmailChanged, required this.onPasswordChanged, required this.onConfirmPasswordChanged});
-final Function(String) onEmailChanged;
-final Function(String) onPasswordChanged;
-final Function(String) onConfirmPasswordChanged;
+  const SignUpUserAcceptData({
+    super.key, required this.emailController, required this.passwordController, required this.passwordConfirmationController,
+  });
+  final TextEditingController emailController;
+  final TextEditingController passwordController;
+  final TextEditingController passwordConfirmationController;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -15,16 +17,16 @@ final Function(String) onConfirmPasswordChanged;
           labelText: 'Email',
           hintText: 'Enter your email',
           iconData: Icons.email,
-          onChanged:onEmailChanged
+          controller: emailController,
         ),
         SizedBox(
           height: 10.h,
         ),
-         CustomTextFormField(
+          CustomTextFormField(
           labelText: 'Password',
           hintText: 'Enter your password',
           iconData: Icons.lock,
-          onChanged: onPasswordChanged,
+          controller: passwordController,
         ),
         SizedBox(
           height: 10.h,
@@ -33,7 +35,7 @@ final Function(String) onConfirmPasswordChanged;
           labelText: 'Submit Password',
           hintText: 'Submit your password',
           iconData: Icons.lock,
-          onChanged: onConfirmPasswordChanged,
+          controller: passwordConfirmationController,
         ),
       ],
     );

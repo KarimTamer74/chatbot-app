@@ -12,31 +12,27 @@ class SignUpViewBody extends StatefulWidget {
   State<SignUpViewBody> createState() => _SignUpViewBodyState();
 }
 
-GlobalKey<FormState> formKey = GlobalKey<FormState>();
 class _SignUpViewBodyState extends State<SignUpViewBody> {
   @override
   Widget build(BuildContext context) {
-    return Form(
-      key: formKey,
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(10, 10, 10, 30),
-        child: BlocConsumer<SignUpCubit, SignUpState>(
-          listener: (context, state) {
-            if (state is SignUpSuccessState) {
-              showSnackBar(context, 'Account created successfully✔️.');
-              Navigator.pushNamed(context, signInView);
-            } else if (state is SignUpFailureState) {
-              showSnackBar(context, state.errorMessage);
-            } else if (state is SignUpLoadingState) {
-              const Center(
-                child: CircularProgressIndicator(),
-              );
-            }
-          },
-          builder: (context, state) {
-            return const SignUpBuildWidgets();
-          },
-        ),
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(10, 10, 10, 30),
+      child: BlocConsumer<SignUpCubit, SignUpState>(
+        listener: (context, state) {
+          if (state is SignUpSuccessState) {
+            showSnackBar(context, 'Account created successfully✔️.');
+            Navigator.pushNamed(context, signInView);
+          } else if (state is SignUpFailureState) {
+            showSnackBar(context, state.errorMessage);
+          } else if (state is SignUpLoadingState) {
+            const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        },
+        builder: (context, state) {
+          return const SignUpBuildWidgets();
+        },
       ),
     );
   }
