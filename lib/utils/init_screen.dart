@@ -15,7 +15,7 @@ class InitScreen extends StatelessWidget {
             return const Center(child: CircularProgressIndicator());
           }
           if (snapshot.data == null || snapshot.data == true) {
-            return const SignInView();
+            return const OnboardingView();
           }
           return const OnboardingView();
         });

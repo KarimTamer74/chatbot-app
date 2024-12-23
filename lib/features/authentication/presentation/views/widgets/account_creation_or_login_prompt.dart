@@ -1,3 +1,4 @@
+import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/app_colors.dart';
 import 'package:chatbot_app/utils/styles.dart';
 import 'package:flutter/material.dart';
@@ -26,9 +27,9 @@ class AccountCreationOrLoginPrompt extends StatelessWidget {
         ),
         TextButton(
           onPressed: () {
-            if (textButton == 'Sign up') {
+            if (textButton == S.of(context).signUp) {
               Navigator.pushNamed(context, signUpView);
-            } else if (textButton == 'Sign in') {
+            } else if (textButton == S.of(context).signIn) {
               Navigator.pop(context);
             }
           },

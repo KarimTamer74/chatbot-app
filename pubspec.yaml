@@ -17,6 +17,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
+  flutter_localizations:
+    sdk: flutter
   flutter_screenutil: ^5.9.3
   get_it: ^8.0.2
   google_sign_in: ^6.2.1
@@ -46,3 +48,5 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+flutter_intl:
+  enabled: true

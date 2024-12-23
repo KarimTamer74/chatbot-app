@@ -1,0 +1,28 @@
+{
+    
+    "login": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "enterYourEmail": "أدخل بريدك الإلكتروني",
+    "enterYourPassword": "أدخل كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "submitYourPassword": "تأكيد كلمة المرور",
+    "signUp": "إنشاء حساب جديد",
+    "signIn": "تسجيل الدخول",
+    "alreadyHaveAnAccount": "لديك حساب بالفعل؟",
+    "donotHaveAnAccount": "لا تمتلك حسابًا؟",
+    "thisFieldRequired": "هذا الحقل مطلوب",
+    "continueWithGoogle": "التسجيل باستخدام جوجل",
+    "continueWithPhone": "التسجيل باستخدام الهاتف",
+    "orLoginWith": "   أو تسجيل الدخول باستخدام   "   ,
+    "forgotPassword": "نسيت كلمة المرور",
+    "rememberMe": "تذكرني",
+    "changeTheme": "تغيير السمة",
+    "changeLanguage": "تغيير اللغة",
+    "language":"اللغة",
+    "arabic":"العربية",
+    "english":"English"
+    
+    
+    
+}

@@ -1,3 +1,4 @@
+import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/styles.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       controller: widget.controller,
       validator: (value) {
         if ((value == null || value.isEmpty)) {
-          return 'This field is required.';
+          return S.of(context).thisFieldRequired;
         }
         return null;
       },

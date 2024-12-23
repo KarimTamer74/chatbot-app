@@ -1,3 +1,4 @@
+import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/styles.dart';
 import 'package:flutter/material.dart';
 
@@ -6,18 +7,18 @@ class LoginDividerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Expanded(
+        const Expanded(
           child: Divider(
             thickness: 1,
           ),
         ),
         Text(
-          '  or login with  ',
+          S.of(context).orLoginWith,
           style: Styles.textStyle20,
         ),
-        Expanded(
+        const Expanded(
           child: Divider(),
         ),
       ],

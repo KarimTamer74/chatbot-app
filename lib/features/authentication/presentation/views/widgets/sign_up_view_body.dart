@@ -1,7 +1,7 @@
 import 'package:chatbot_app/features/authentication/presentation/view_model/sign_up/sign_up_cubit.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/sign_up_build_widgets.dart';
 import 'package:chatbot_app/utils/constants.dart';
-import 'package:chatbot_app/utils/show_snackbar_widget.dart';
+import 'package:chatbot_app/utils/common_widgets/show_snackbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

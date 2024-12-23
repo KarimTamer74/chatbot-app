@@ -4,6 +4,7 @@ import 'package:chatbot_app/features/authentication/presentation/views/widgets/a
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/other_login_ways.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/remember_and_forget_pass.dart';
+import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/app_assets.dart';
 import 'package:chatbot_app/utils/constants.dart';
 import 'package:chatbot_app/utils/theme/app_theming_cubit/app_theme_cubit.dart';
@@ -72,7 +73,7 @@ class _SignInBuildWidgetsState extends State<SignInBuildWidgets> {
                 height: 16.h,
               ),
               CustomElevatedButton(
-                buttonText: 'Login',
+                buttonText: S.of(context).login,
                 onPressed: () {
                   getUserDataInLoginView();
                   if (signInformKey.currentState!.validate()) {
@@ -86,7 +87,7 @@ class _SignInBuildWidgetsState extends State<SignInBuildWidgets> {
                 height: 16.h,
               ),
               CustomElevatedButton(
-                buttonText: 'change theme',
+                buttonText: S.of(context).changeTheme,
                 onPressed: () {
                   if (context.isDarkMode) {
                     context.read<AppThemeCubit>().changeTheme(ThemeMode.light);
@@ -102,9 +103,9 @@ class _SignInBuildWidgetsState extends State<SignInBuildWidgets> {
               SizedBox(
                 height: 12.h,
               ),
-              const AccountCreationOrLoginPrompt(
-                text: 'Don\'t have an account?',
-                textButton: 'Sign up',
+              AccountCreationOrLoginPrompt(
+                text: S.of(context).donotHaveAnAccount,
+                textButton: S.of(context).signUp,
               )
             ],
           ),

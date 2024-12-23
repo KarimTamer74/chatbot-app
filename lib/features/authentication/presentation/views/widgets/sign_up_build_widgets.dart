@@ -2,8 +2,9 @@ import 'package:chatbot_app/features/authentication/presentation/view_model/sign
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/account_creation_or_login_prompt.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/sign_up_user_accept_data.dart';
+import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/app_assets.dart';
-import 'package:chatbot_app/utils/show_snackbar_widget.dart';
+import 'package:chatbot_app/utils/common_widgets/show_snackbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -63,31 +64,35 @@ class _SignUpBuildWidgetsState extends State<SignUpBuildWidgets> {
               height: 20.h,
             ),
             CustomElevatedButton(
-              buttonText: 'Sign up',
+              buttonText: S.of(context).signUp,
               onPressed: () async {
                 getUserData();
-                if (signUpformKey.currentState!.validate()) {
-                  signUpformKey.currentState!.save();
-                  if (password == confirmPassword) {
-                    BlocProvider.of<SignUpCubit>(context)
-                        .userSignUp(email: email!, password: password!);
-                  } else {
-                    showSnackBar(context, 'Passwords do not match');
-                  }
-                }
+                checkValidation(context);
               },
             ),
             SizedBox(
               height: 20.h,
             ),
-            const AccountCreationOrLoginPrompt(
-              text: 'Already have an account?',
-              textButton: 'Sign in',
+            AccountCreationOrLoginPrompt(
+              text: S.of(context).alreadyHaveAnAccount,
+              textButton: S.of(context).signIn,
             )
           ],
         ),
       ),
     );
+  }
+
+  void checkValidation(BuildContext context) {
+    if (signUpformKey.currentState!.validate()) {
+      signUpformKey.currentState!.save();
+      if (password == confirmPassword) {
+        BlocProvider.of<SignUpCubit>(context)
+            .userSignUp(email: email!, password: password!);
+      } else {
+        showSnackBar(context, 'Passwords do not match');
+      }
+    }
   }
 
   void getUserData() {

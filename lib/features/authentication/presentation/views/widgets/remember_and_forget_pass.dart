@@ -1,4 +1,6 @@
+import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/constants.dart';
+import 'package:chatbot_app/utils/functions.dart';
 import 'package:chatbot_app/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -20,7 +22,7 @@ class _RememberAndForgetPassState extends State<RememberAndForgetPass> {
       children: [
         IconButton(
           onPressed: () {
-            completeSignIn();
+            signInCompleted();
 
             setState(() {
               isPressed = !isPressed;
@@ -36,13 +38,13 @@ class _RememberAndForgetPassState extends State<RememberAndForgetPass> {
         ),
         TextButton(
           onPressed: () {
-            completeSignIn();
+            signInCompleted();
             setState(() {
               isPressed = !isPressed;
             });
           },
           child: Text(
-            'Remember me',
+            S.of(context).rememberMe,
             style: Styles.textStyle16,
           ),
         ),
@@ -50,16 +52,11 @@ class _RememberAndForgetPassState extends State<RememberAndForgetPass> {
         TextButton(
           onPressed: () {},
           child: Text(
-            'Forgot Password?',
+            S.of(context).forgotPassword,
             style: Styles.textStyle16,
           ),
         )
       ],
     );
   }
-}
-
-void completeSignIn() {
-  final pref = SharedPreferences.getInstance();
-  pref.then((value) => value.setBool(isSignInKey, true));
 }
