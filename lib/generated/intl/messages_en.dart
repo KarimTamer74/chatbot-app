@@ -35,7 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "continueWithPhone":
             MessageLookupByLibrary.simpleMessage("Continue with Phone"),
         "donotHaveAnAccount":
-            MessageLookupByLibrary.simpleMessage("Don/\'t have an account?"),
+            MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "enterYourEmail":
