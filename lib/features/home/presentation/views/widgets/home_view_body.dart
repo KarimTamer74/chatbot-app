@@ -1,52 +1,88 @@
-import 'package:chatbot_app/features/authentication/presentation/view_model/sign_out/sign_out_cubit.dart';
+import 'package:chatbot_app/generated/l10n.dart';
+import 'package:chatbot_app/utils/app_colors.dart';
 import 'package:chatbot_app/utils/constants.dart';
-import 'package:chatbot_app/utils/functions.dart';
-import 'package:chatbot_app/utils/common_widgets/show_snackbar_widget.dart';
+import 'package:chatbot_app/utils/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: BlocConsumer<SignOutCubit, SignOutState>(
-          listener: (context, state) {
-            if (state is SignOutSuccessState) {
-              Navigator.pushReplacementNamed(context, signInView);
-              showSnackBar(context, 'Logout successfully✔️');
-              signOutCompleted();
-            }
-            if (state is SignOutFailureState) {
-              showSnackBar(context, state.errorMessage);
-            } else if (state is SignOutLoadingState) {
-              const Center(
-                child: CircularProgressIndicator(),
-              );
-            }
-          },
-          builder: (context, state) {
-            return Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Center(
-                  child: Text(
-                    "Home",
-                    style: TextStyle(color: Colors.lightBlue, fontSize: 24),
-                  ),
+    return Center(
+      child: Padding(
+        padding: appPadding,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const Spacer(),
+
+            Icon(
+              Icons.chat_bubble_outline,
+              size: 100.sp,
+              color: AppColors.kdarkBlueColor,
+            ),
+            SizedBox(height: 30.h),
+            Text(
+              S.of(context).startConversation,
+              textAlign: TextAlign.center,
+              style: Styles.textStyleBold20,
+            ),
+            // SizedBox(height: 250.h),
+            const Spacer(
+              
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, botView);
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.kdarkBlueColor,
+                padding: EdgeInsets.symmetric(horizontal: 60.w, vertical: 15.h),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
                 ),
-                TextButton(
-                    onPressed: () {
-                      BlocProvider.of<SignOutCubit>(context).userSignOut();
-                    },
-                    child: const Text("Logout"))
-              ],
-            );
-          },
+              ),
+              child: Text(S.of(context).startChat,
+                  style: Styles.textStyleBold22.copyWith(
+                    color: AppColors.kWhiteColor,
+                  )),
+            ),
+            // SizedBox(height: 60.h),
+            // Text(
+            //   S.of(context).tapToStart,
+            //   textAlign: TextAlign.center,
+            //   style: Styles.greyTextStyle16.copyWith(
+            //     color: Colors.grey[600],
+            //     fontWeight: FontWeight.w500,
+            //   ),
+            // ),
+            const Spacer(),
+          ],
         ),
       ),
     );
   }
 }
+
+//  BlocConsumer<SignOutCubit, SignOutState>(
+//           listener: (context, state) {
+//             if (state is SignOutSuccessState) {
+//               Navigator.pushReplacementNamed(context, signInView);
+//               showSnackBar(context, 'Logout successfully✔️');
+//               signOutCompleted();
+//             }
+//             if (state is SignOutFailureState) {
+//               showSnackBar(context, state.errorMessage);
+//             } else if (state is SignOutLoadingState) {
+//               const Center(
+//                 child: CircularProgressIndicator(),
+//               );
+//             }
+//           },
+//           builder: (context, state) {
+//             return const HomeViewBuildWidgets();
+//           },
+//         ),

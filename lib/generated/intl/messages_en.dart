@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
+        "askGemini": MessageLookupByLibrary.simpleMessage("Ask Gemini"),
         "changeLanguage":
             MessageLookupByLibrary.simpleMessage("Change Language"),
         "changeTheme": MessageLookupByLibrary.simpleMessage("Change Theme"),
@@ -52,8 +53,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "rememberMe": MessageLookupByLibrary.simpleMessage("Remember Me"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
         "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "startChat": MessageLookupByLibrary.simpleMessage("Start Chat"),
+        "startConversation": MessageLookupByLibrary.simpleMessage(
+            "Let’s start chatting! Ask me anything you want."),
         "submitYourPassword":
             MessageLookupByLibrary.simpleMessage("Submit your password"),
+        "tapToStart": MessageLookupByLibrary.simpleMessage(
+            "Tap the button to start a new conversation."),
         "thisFieldRequired":
             MessageLookupByLibrary.simpleMessage("This field is required.")
       };

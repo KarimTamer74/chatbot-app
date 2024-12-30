@@ -21,7 +21,11 @@
     "changeLanguage": "تغيير اللغة",
     "language":"اللغة",
     "arabic":"العربية",
-    "english":"English"
+    "english":"English",
+    "askGemini":"اسأل جيميني",
+    "startConversation":"لنبدأ الدردشة! اسألني أي شيء ترغب فيه.",
+    "tapToStart":"اضغط على الزر لبدء محادثة جديدة.",
+    "startChat":"بدء المحادثة"
     
     
     

@@ -1,6 +1,7 @@
-import 'package:chatbot_app/features/authentication/presentation/view_model/sign_out/sign_out_cubit.dart';
+import 'package:chatbot_app/utils/app_colors.dart';
+import 'package:chatbot_app/utils/common_widgets/change_theme_widget.dart';
+import 'package:chatbot_app/utils/common_widgets/select_language_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'widgets/home_view_body.dart';
 
@@ -9,9 +10,22 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => SignOutCubit(),
-      child: const HomeViewBody(),
+    return SafeArea(
+      child: Scaffold(
+        drawer: Drawer(
+          backgroundColor: AppColors.kBlueColor,
+          child: ListView(
+            children: const [
+              Spacer(),
+              SelectLanguageWidget(),
+              SizedBox(height: 20),
+              CustomChangeThemeWidget(),
+              Spacer()
+            ],
+          ),
+        ),
+        body: const HomeViewBody(),
+      ),
     );
   }
 }

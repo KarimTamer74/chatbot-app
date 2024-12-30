@@ -20,5 +20,9 @@
     "changeLanguage":"Change Language",
     "language":"Language",
     "english":"English",
-    "arabic":"العربية"
+    "arabic":"العربية",
+    "askGemini":"Ask Gemini",
+    "startConversation":"Let’s start chatting! Ask me anything you want.",
+    "tapToStart":"Tap the button to start a new conversation.",
+    "startChat":"Start Chat"
 }

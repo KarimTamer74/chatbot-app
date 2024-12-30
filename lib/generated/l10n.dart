@@ -269,6 +269,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Ask Gemini`
+  String get askGemini {
+    return Intl.message(
+      'Ask Gemini',
+      name: 'askGemini',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Let’s start chatting! Ask me anything you want.`
+  String get startConversation {
+    return Intl.message(
+      'Let’s start chatting! Ask me anything you want.',
+      name: 'startConversation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tap the button to start a new conversation.`
+  String get tapToStart {
+    return Intl.message(
+      'Tap the button to start a new conversation.',
+      name: 'tapToStart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start Chat`
+  String get startChat {
+    return Intl.message(
+      'Start Chat',
+      name: 'startChat',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

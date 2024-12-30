@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل؟"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
+        "askGemini": MessageLookupByLibrary.simpleMessage("اسأل جيميني"),
         "changeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "changeTheme": MessageLookupByLibrary.simpleMessage("تغيير السمة"),
         "confirmPassword":
@@ -51,8 +52,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "rememberMe": MessageLookupByLibrary.simpleMessage("تذكرني"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "signUp": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
+        "startChat": MessageLookupByLibrary.simpleMessage("بدء المحادثة"),
+        "startConversation": MessageLookupByLibrary.simpleMessage(
+            "لنبدأ الدردشة! اسألني أي شيء ترغب فيه."),
         "submitYourPassword":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
+        "tapToStart": MessageLookupByLibrary.simpleMessage(
+            "اضغط على الزر لبدء محادثة جديدة."),
         "thisFieldRequired":
             MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب")
       };
