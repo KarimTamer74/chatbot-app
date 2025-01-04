@@ -1,7 +1,7 @@
-import 'package:chatbot_app/utils/app_colors.dart';
-import 'package:chatbot_app/utils/common_widgets/change_theme_widget.dart';
-import 'package:chatbot_app/utils/common_widgets/select_language_widget.dart';
+import 'package:chatbot_app/features/home/presentation/views/widgets/custom_drawer_list_view.dart';
+import 'package:chatbot_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'widgets/home_view_body.dart';
 
@@ -12,16 +12,13 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text(S.of(context).chatbotApp),
+        ),
         drawer: Drawer(
-          backgroundColor: AppColors.kBlueColor,
-          child: ListView(
-            children: const [
-              Spacer(),
-              SelectLanguageWidget(),
-              SizedBox(height: 20),
-              CustomChangeThemeWidget(),
-              Spacer()
-            ],
+          child: Padding(
+            padding: EdgeInsets.symmetric(vertical: 20.sp, horizontal: 10.sp),
+            child: const CustomDrawerListView(),
           ),
         ),
         body: const HomeViewBody(),
