@@ -24,5 +24,13 @@
     "askGemini":"Ask Gemini",
     "startConversation":"Let’s start chatting! Ask me anything you want.",
     "tapToStart":"Tap the button to start a new conversation.",
-    "startChat":"Start Chat"
+    "startChat":"Start Chat",
+    "chatbotApp":"Chatbot App",
+    "back": "Back",
+    "recentChats": "Recent Chats",
+    "profile": "Profile",
+    "theme": "Theme",
+    "aboutApp": "About App",
+    "helpSupport": "Help & Support",
+    "signOut": "Sign Out"
 }

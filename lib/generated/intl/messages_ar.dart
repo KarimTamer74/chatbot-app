@@ -22,12 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "aboutApp": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل؟"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
         "askGemini": MessageLookupByLibrary.simpleMessage("اسأل جيميني"),
+        "back": MessageLookupByLibrary.simpleMessage("رجوع"),
         "changeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "changeTheme": MessageLookupByLibrary.simpleMessage("تغيير السمة"),
+        "chatbotApp": MessageLookupByLibrary.simpleMessage("تطبيق الدردشة"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "continueWithGoogle":
@@ -44,13 +47,17 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
+        "helpSupport": MessageLookupByLibrary.simpleMessage("المساعدة والدعم"),
         "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "orLoginWith": MessageLookupByLibrary.simpleMessage(
             "   أو تسجيل الدخول باستخدام   "),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+        "recentChats": MessageLookupByLibrary.simpleMessage("الدردشات الأخيرة"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("تذكرني"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "signUp": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
         "startChat": MessageLookupByLibrary.simpleMessage("بدء المحادثة"),
         "startConversation": MessageLookupByLibrary.simpleMessage(
@@ -59,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "tapToStart": MessageLookupByLibrary.simpleMessage(
             "اضغط على الزر لبدء محادثة جديدة."),
+        "theme": MessageLookupByLibrary.simpleMessage("الثيم"),
         "thisFieldRequired":
             MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب")
       };

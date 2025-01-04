@@ -22,13 +22,16 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "aboutApp": MessageLookupByLibrary.simpleMessage("About App"),
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
         "askGemini": MessageLookupByLibrary.simpleMessage("Ask Gemini"),
+        "back": MessageLookupByLibrary.simpleMessage("Back"),
         "changeLanguage":
             MessageLookupByLibrary.simpleMessage("Change Language"),
         "changeTheme": MessageLookupByLibrary.simpleMessage("Change Theme"),
+        "chatbotApp": MessageLookupByLibrary.simpleMessage("Chatbot App"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
         "continueWithGoogle":
@@ -45,13 +48,17 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter your password"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
+        "helpSupport": MessageLookupByLibrary.simpleMessage("Help & Support"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "orLoginWith":
             MessageLookupByLibrary.simpleMessage("  or login with  "),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "recentChats": MessageLookupByLibrary.simpleMessage("Recent Chats"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("Remember Me"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
+        "signOut": MessageLookupByLibrary.simpleMessage("Sign Out"),
         "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "startChat": MessageLookupByLibrary.simpleMessage("Start Chat"),
         "startConversation": MessageLookupByLibrary.simpleMessage(
@@ -60,6 +67,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Submit your password"),
         "tapToStart": MessageLookupByLibrary.simpleMessage(
             "Tap the button to start a new conversation."),
+        "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "thisFieldRequired":
             MessageLookupByLibrary.simpleMessage("This field is required.")
       };

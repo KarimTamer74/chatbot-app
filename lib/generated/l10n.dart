@@ -309,6 +309,86 @@ class S {
       args: [],
     );
   }
+
+  /// `Chatbot App`
+  String get chatbotApp {
+    return Intl.message(
+      'Chatbot App',
+      name: 'chatbotApp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Back`
+  String get back {
+    return Intl.message(
+      'Back',
+      name: 'back',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Recent Chats`
+  String get recentChats {
+    return Intl.message(
+      'Recent Chats',
+      name: 'recentChats',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Theme`
+  String get theme {
+    return Intl.message(
+      'Theme',
+      name: 'theme',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About App`
+  String get aboutApp {
+    return Intl.message(
+      'About App',
+      name: 'aboutApp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Help & Support`
+  String get helpSupport {
+    return Intl.message(
+      'Help & Support',
+      name: 'helpSupport',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Out`
+  String get signOut {
+    return Intl.message(
+      'Sign Out',
+      name: 'signOut',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
