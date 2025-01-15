@@ -48,6 +48,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "donotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("لا تمتلك حسابًا؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "emailAddress":
+            MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+        "emptyEmail":
+            MessageLookupByLibrary.simpleMessage("البريد الالكتروني فارغ"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "enterYourEmail":
             MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
@@ -78,10 +82,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "orLoginWith": MessageLookupByLibrary.simpleMessage(
             "   أو تسجيل الدخول باستخدام   "),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "pleaseEnterYourEmailToRecoverYourPassword":
+            MessageLookupByLibrary.simpleMessage(
+                "برجاء ادخال بريدك الالكتروني لاستعادة كلمة المرور"),
         "pleaseWait": MessageLookupByLibrary.simpleMessage("...يرجى الانتظار"),
         "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "recentChats": MessageLookupByLibrary.simpleMessage("الدردشات الأخيرة"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("تذكرني"),
+        "resetPassword":
+            MessageLookupByLibrary.simpleMessage("استعادة كلمة المرور"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "signUp": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),

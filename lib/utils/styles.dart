@@ -5,7 +5,13 @@ abstract class Styles {
   static const textStyle14 = TextStyle(fontSize: 14);
   static const textStyle22 = TextStyle(fontSize: 22);
   static const textStyle20 = TextStyle(fontSize: 20); // regular font weight
-
+  static TextStyle textStyle15 = TextStyle(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w500,
+  );  static TextStyle textStyleBold15 = TextStyle(
+    fontSize: 15.sp,
+    fontWeight: FontWeight.bold,
+  ); //
   static TextStyle textStyle16 = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w500,
@@ -27,14 +33,18 @@ abstract class Styles {
     color: Colors.white,
     fontSize: 18.sp,
   ); // regular font weight
-  static const textStyleBold20 =
-      TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
-  static const textStyleBold22 =
-      TextStyle(fontSize: 22, fontWeight: FontWeight.bold);
-  static const textStyleBold24 =
-      TextStyle(fontSize: 24, fontWeight: FontWeight.bold);
-  static const textStyleBold26 =
-      TextStyle(fontSize: 26, fontWeight: FontWeight.bold);
-  static TextStyle whiteTextStyle24 = TextStyle(
-      fontSize: 24.sp, fontWeight: FontWeight.bold); // regular font weight
+  static final textStyleBold20 =
+      TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold);
+  static final textStyleBold22 =
+      TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold);
+  static final textStyleBold24 =
+      TextStyle(fontSize: 24.sp, fontWeight: FontWeight.bold);
+  static final textStyleBold26 =
+      TextStyle(fontSize: 26.sp, fontWeight: FontWeight.bold);
+  static TextStyle whiteTextStyle24 =
+      TextStyle(fontSize: 24.sp, fontWeight: FontWeight.bold);
+  static TextStyle textStyleBold32 = TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeight.bold,
+  );
 }

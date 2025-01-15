@@ -48,5 +48,9 @@
     "Continue":"Continue",
     "areYouSureToSignOut": "Are you sure you want to sign out?",
     "cancel":"Cancel",
-    "yes":"yes"
+    "yes":"Yes",
+    "emailAddress":"Email Address",
+    "emptyEmail":"Empty Email",
+    "resetPassword":"Reset Password",
+    "pleaseEnterYourEmailToRecoverYourPassword": "Please enter your email address to recover your password."
 }

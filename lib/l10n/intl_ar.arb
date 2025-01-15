@@ -48,7 +48,10 @@
     "Continue":"متابعة",
     "areYouSureToSignOut": "هل تريد تسجيل الخروج؟",
     "cancel":"إلغاء",
-    "yes":"نعم"
-
+    "yes":"نعم",
+    "emailAddress":"البريد الالكتروني",
+    "emptyEmail":"البريد الالكتروني فارغ",
+    "resetPassword":"استعادة كلمة المرور",
+    "pleaseEnterYourEmailToRecoverYourPassword":"برجاء ادخال بريدك الالكتروني لاستعادة كلمة المرور"
     
 }

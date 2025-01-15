@@ -540,11 +540,51 @@ class S {
     );
   }
 
-  /// `yes`
+  /// `Yes`
   String get yes {
     return Intl.message(
-      'yes',
+      'Yes',
       name: 'yes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email Address`
+  String get emailAddress {
+    return Intl.message(
+      'Email Address',
+      name: 'emailAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Empty Email`
+  String get emptyEmail {
+    return Intl.message(
+      'Empty Email',
+      name: 'emptyEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reset Password`
+  String get resetPassword {
+    return Intl.message(
+      'Reset Password',
+      name: 'resetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your email address to recover your password.`
+  String get pleaseEnterYourEmailToRecoverYourPassword {
+    return Intl.message(
+      'Please enter your email address to recover your password.',
+      name: 'pleaseEnterYourEmailToRecoverYourPassword',
       desc: '',
       args: [],
     );

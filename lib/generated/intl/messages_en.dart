@@ -49,6 +49,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "donotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
+        "emptyEmail": MessageLookupByLibrary.simpleMessage("Empty Email"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "enterYourEmail":
             MessageLookupByLibrary.simpleMessage("Enter your email"),
@@ -79,10 +81,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "orLoginWith":
             MessageLookupByLibrary.simpleMessage("  or login with  "),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "pleaseEnterYourEmailToRecoverYourPassword":
+            MessageLookupByLibrary.simpleMessage(
+                "Please enter your email address to recover your password."),
         "pleaseWait": MessageLookupByLibrary.simpleMessage("please wait..."),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "recentChats": MessageLookupByLibrary.simpleMessage("Recent Chats"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("Remember Me"),
+        "resetPassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
         "signOut": MessageLookupByLibrary.simpleMessage("Sign Out"),
         "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
@@ -96,6 +102,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "thisFieldRequired":
             MessageLookupByLibrary.simpleMessage("This field is required."),
-        "yes": MessageLookupByLibrary.simpleMessage("yes")
+        "yes": MessageLookupByLibrary.simpleMessage("Yes")
       };
 }
