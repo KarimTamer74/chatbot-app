@@ -3,10 +3,12 @@ import 'package:chatbot_app/features/authentication/presentation/views/widgets/a
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/login_divider_widget.dart';
 import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/app_assets.dart';
+import 'package:chatbot_app/utils/app_colors.dart';
 import 'package:chatbot_app/utils/common_widgets/button_loading_indicator.dart';
 import 'package:chatbot_app/utils/common_widgets/show_snackbar_widget.dart';
 import 'package:chatbot_app/utils/constants.dart';
 import 'package:chatbot_app/utils/functions.dart';
+import 'package:chatbot_app/utils/theme/extentaions/app_theme_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -78,6 +80,9 @@ class OtherLoginWays extends StatelessWidget {
             }
             return AuthOptionButton(
               image: AppAssets.facebookAvatar,
+              iconColor: context.isDarkMode
+                  ? AppColors.kWhiteColor
+                  : AppColors.kBlueColor,
               text: S.of(context).contiueWithFacebook,
               onPressed: () {
                 BlocProvider.of<SignInWithSocialCubit>(context)

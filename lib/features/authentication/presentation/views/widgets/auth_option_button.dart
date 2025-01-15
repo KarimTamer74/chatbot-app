@@ -1,3 +1,4 @@
+import 'package:chatbot_app/utils/theme/extentaions/app_theme_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -10,12 +11,13 @@ class AuthOptionButton extends StatelessWidget {
     required this.image,
     required this.text,
     this.onPressed,
+    this.iconColor,
   });
 
   final String image;
   final String text;
   final void Function()? onPressed;
-
+  final Color? iconColor;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -24,7 +26,9 @@ class AuthOptionButton extends StatelessWidget {
         height: 50.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30.r),
-          color: AppColors.kBlueColor.withOpacity(.35),
+          color: context.isDarkMode
+              ? AppColors.kBlueColor.withOpacity(.2)
+              : AppColors.kBlueColor.withOpacity(.1),
         ),
         child: Row(
           children: [
@@ -34,6 +38,7 @@ class AuthOptionButton extends StatelessWidget {
               child: Center(
                 child: Image.asset(
                   image,
+                  color: iconColor,
                   fit: BoxFit.contain,
                 ),
               ),
