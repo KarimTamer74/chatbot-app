@@ -13,3 +13,5 @@ const String localKey = "localKey";
 const String arabicKey = "ar";
 const String englishKey = "en";
 const String googleApiKey = 'AIzaSyAOTNs7RAYxHTvmFb-tWpi4vqRJYFpd0kU';
+const String profileView= "profileView";
+const String aboutApp= "aboutApp";

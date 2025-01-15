@@ -1,4 +1,6 @@
+import 'package:chatbot_app/features/home/presentation/views/about_app_view.dart';
 import 'package:chatbot_app/features/home/presentation/views/bot_view.dart';
+import 'package:chatbot_app/features/home/presentation/views/profile_view.dart';
 import 'package:flutter/material.dart';
 
 import '../features/authentication/presentation/views/sign_in_view.dart';
@@ -32,6 +34,12 @@ class AppRouter {
       case botView:
         return MaterialPageRoute(
           builder: (context) => const BotView(),
+        );case profileView:
+        return MaterialPageRoute(
+          builder: (context) => const ProfileView(),
+        );case aboutApp:
+        return MaterialPageRoute(
+          builder: (context) => const AboutAppView(),
         );
       default:
         return MaterialPageRoute(
