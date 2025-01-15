@@ -1,8 +1,10 @@
-import 'package:chatbot_app/utils/app_colors.dart';
 import 'package:chatbot_app/utils/theme/app_theming_cubit/app_theme_cubit.dart';
 import 'package:chatbot_app/utils/theme/extentaions/app_theme_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../app_colors.dart';
 
 class CustomChangeThemeWidget extends StatefulWidget {
   const CustomChangeThemeWidget({super.key});
@@ -26,46 +28,48 @@ class _CustomChangeThemeWidgetState extends State<CustomChangeThemeWidget> {
         });
       },
       style: ElevatedButton.styleFrom(
-        backgroundColor: !context.isDarkMode
-            ? AppColors.kWhiteColor
-            : AppColors.kBlackColor,
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+        backgroundColor:
+            !context.isDarkMode ? AppColors.kWhiteColor : AppColors.kBlackColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.circular(30.sp),
         ),
         side: BorderSide(
           color: context.isDarkMode
               ? AppColors.kWhiteColor
               : AppColors.kBlackColor,
-          width: 3,
+          width: 3.w,
         ),
-        minimumSize: const Size(100, 40),
-        maximumSize: const Size(100, 40),
+        minimumSize: Size(90.sp, 36.sp),
+        maximumSize: Size(90.sp, 36.sp),
       ),
       child: context.isDarkMode
           ? Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const SizedBox(),
-                Icon(
-                  Icons.dark_mode_outlined,
-                  size: 30,
-                  color: context.isDarkMode
-                      ? AppColors.kWhiteColor
-                      : AppColors.kBlackColor,
+                const Spacer(),
+                FittedBox(
+                  fit: BoxFit.contain,
+                  child: Icon(
+                    Icons.dark_mode_outlined,
+                    color: context.isDarkMode
+                        ? AppColors.kWhiteColor
+                        : AppColors.kBlackColor,
+                  ),
                 ),
               ],
             )
           : Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Icon(
-                  Icons.light_mode_outlined,
-                  size: 30,
-                  color: context.isDarkMode
-                      ? AppColors.kWhiteColor
-                      : AppColors.kBlackColor,
+                FittedBox(
+                  fit: BoxFit.fill,
+                  child: Icon(
+                    Icons.light_mode_outlined,
+                    color: context.isDarkMode
+                        ? AppColors.kWhiteColor
+                        : AppColors.kBlackColor,
+                  ),
                 ),
-                const SizedBox(),
+                const Spacer(),
               ],
             ),
     );
