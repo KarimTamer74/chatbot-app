@@ -55,5 +55,10 @@
 		<true/>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false/>
+		<key>FacebookAppID</key>
+		<string>1655097778697948</string>
+		<key>FacebookDisplayName</key>
+		<string>chatbot_app</string>
+
 	</dict>
 </plist>

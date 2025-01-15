@@ -10,41 +10,45 @@ Future<void> completeOnboardingView() async {
   final prefs = await SharedPreferences.getInstance();
   await prefs.setBool(isShowedOnboardingViewKey, true);
 }
-  Future<bool> checkOnboardingStatus() async {
-    final prefs = await SharedPreferences.getInstance();
-    return prefs.getBool(isShowedOnboardingViewKey) ?? false;
-  }
-  Future<bool> checkSignIn() async {
-    final prefs = await SharedPreferences.getInstance();
 
-    if (prefs.getBool(isSignInKey) == true) {
-      log('Already signed in');
-    }
-    
-    return prefs.getBool(isSignInKey) ?? false;
-  }
-    Future<void> signInCompleted() async {
-    final pref = SharedPreferences.getInstance();
-    pref.then((value) => value.setBool(isSignInKey, true));
+Future<bool> checkOnboardingStatus() async {
+  final prefs = await SharedPreferences.getInstance();
+  return prefs.getBool(isShowedOnboardingViewKey) ?? false;
+}
+
+Future<bool> checkSignIn() async {
+  final prefs = await SharedPreferences.getInstance();
+
+  if (prefs.getBool(isSignInKey) == true) {
+    log('Already signed in');
   }
 
+  return prefs.getBool(isSignInKey) ?? false;
+}
 
-    void signOutCompleted() {
-    final prefs = SharedPreferences.getInstance();
-    prefs.then((value) => value.setBool(isSignInKey, false));
-    log('Sign out completed');
-  }
+Future<void> signInCompleted() async {
+  final pref = SharedPreferences.getInstance();
+  pref.then((value) => value.setBool(isSignInKey, true));
+}
 
-    void changeLangauageMethod(BuildContext context, String languageCode) {
-    Locale arabicLocale = const Locale(arabicKey);
-    Locale englishLocale = const Locale(englishKey);
-    if (languageCode == englishKey) {
-      
-      context.read<AppLocaleCubit>().changeAppLocale(englishLocale);
-   
-    } else if (languageCode == arabicKey) {
-     
-      context.read<AppLocaleCubit>().changeAppLocale(arabicLocale);
-   
-    }
+void signOutCompleted() {
+  final prefs = SharedPreferences.getInstance();
+  prefs.then((value) => value.setBool(isSignInKey, false));
+  log('Sign out completed');
+}
+
+void changeLangauageMethod(BuildContext context, String languageCode) {
+  Locale arabicLocale = const Locale(arabicKey);
+  Locale englishLocale = const Locale(englishKey);
+  if (languageCode == englishKey) {
+    context.read<AppLocaleCubit>().changeAppLocale(englishLocale);
+  } else if (languageCode == arabicKey) {
+    context.read<AppLocaleCubit>().changeAppLocale(arabicLocale);
   }
+}
+
+String extractBeforeAt(String email) {
+  RegExp regex = RegExp(r"^[^@]+");
+  Match? match = regex.firstMatch(email);
+  return match != null ? match.group(0)! : '';
+}

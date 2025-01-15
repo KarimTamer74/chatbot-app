@@ -1,4 +1,5 @@
 import 'package:chatbot_app/features/authentication/presentation/view_model/sign_in/sign_in_cubit.dart';
+import 'package:chatbot_app/features/authentication/presentation/view_model/sign_in/social_sign_in_cubit.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/accept_email_and_password_section.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/account_creation_or_login_prompt.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/custom_elevated_button.dart';
@@ -7,8 +8,6 @@ import 'package:chatbot_app/features/authentication/presentation/views/widgets/r
 import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/app_assets.dart';
 import 'package:chatbot_app/utils/constants.dart';
-import 'package:chatbot_app/utils/theme/app_theming_cubit/app_theme_cubit.dart';
-import 'package:chatbot_app/utils/theme/extentaions/app_theme_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -66,7 +65,7 @@ class _SignInBuildWidgetsState extends State<SignInBuildWidgets> {
                 passwordController: passwordController,
               ),
               SizedBox(
-                height: 16.h,
+                height: 8.h,
               ),
               const RememberAndForgetPass(),
               SizedBox(
@@ -86,20 +85,10 @@ class _SignInBuildWidgetsState extends State<SignInBuildWidgets> {
               SizedBox(
                 height: 16.h,
               ),
-              CustomElevatedButton(
-                buttonText: S.of(context).changeTheme,
-                onPressed: () {
-                  if (context.isDarkMode) {
-                    context.read<AppThemeCubit>().changeTheme(ThemeMode.light);
-                  } else {
-                    context.read<AppThemeCubit>().changeTheme(ThemeMode.dark);
-                  }
-                },
+              BlocProvider(
+                create: (context) => SignInWithSocialCubit(),
+                child: const OtherLoginWays(),
               ),
-              SizedBox(
-                height: 16.h,
-              ),
-              const OtherLoginWays(),
               SizedBox(
                 height: 12.h,
               ),

@@ -3,7 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
 
-
 class SignInCubit extends Cubit<SignInState> {
   SignInCubit() : super(SignInInitialState());
   final Logger _logger = Logger();

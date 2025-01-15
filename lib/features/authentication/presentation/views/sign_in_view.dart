@@ -29,7 +29,7 @@ class SignInView extends StatelessWidget {
                 create: (context) => SignInCubit(),
                 child: const SignInViewBody(),
               );
-            }),
+            },),
       ),
     );
   }
