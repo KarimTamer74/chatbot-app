@@ -1,10 +1,8 @@
 import 'package:chatbot_app/generated/l10n.dart';
-import 'package:chatbot_app/utils/constants.dart';
 import 'package:chatbot_app/utils/functions.dart';
 import 'package:chatbot_app/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class RememberAndForgetPass extends StatefulWidget {
   const RememberAndForgetPass({super.key});
@@ -45,7 +43,7 @@ class _RememberAndForgetPassState extends State<RememberAndForgetPass> {
           },
           child: Text(
             S.of(context).rememberMe,
-            style: Styles.textStyle16,
+            style: Styles.textStyle14,
           ),
         ),
         const Spacer(),
@@ -53,7 +51,7 @@ class _RememberAndForgetPassState extends State<RememberAndForgetPass> {
           onPressed: () {},
           child: Text(
             S.of(context).forgotPassword,
-            style: Styles.textStyle16,
+            style: Styles.textStyle14,
           ),
         )
       ],
