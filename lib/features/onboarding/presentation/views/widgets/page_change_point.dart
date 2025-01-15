@@ -1,5 +1,6 @@
-import 'onboarding_view_body.dart';
 import 'package:flutter/material.dart';
+
+import 'onboarding_view_body.dart';
 
 class PageChangePoints extends StatelessWidget {
   const PageChangePoints({super.key, required this.currentIndex});
@@ -14,7 +15,7 @@ class PageChangePoints extends StatelessWidget {
           onTap: () {
             if (index != currentIndex) {
               pageController.animateToPage(index,
-                  duration: const Duration(milliseconds: 1000),
+                  duration: const Duration(milliseconds: 400),
                   curve: Curves.ease);
             }
           },

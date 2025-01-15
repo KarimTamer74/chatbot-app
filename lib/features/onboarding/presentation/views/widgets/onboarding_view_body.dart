@@ -2,9 +2,9 @@
 
 import 'package:chatbot_app/utils/common_widgets/change_theme_widget.dart';
 import 'package:chatbot_app/utils/common_widgets/select_language_widget.dart';
-import 'package:chatbot_app/utils/theme/app_theming_cubit/app_theme_cubit.dart';
+import 'package:chatbot_app/utils/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'page_view_body.dart';
 
@@ -22,13 +22,14 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(10, 40, 10, 0),
+      padding: appPadding,
       child: Column(
         children: [
-           const Row(
+           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-               const SelectLanguageWidget(),
+              const Expanded(child: const SelectLanguageWidget(),),
+               SizedBox(width: 20.w,),
               const CustomChangeThemeWidget(),
             ],
           ),

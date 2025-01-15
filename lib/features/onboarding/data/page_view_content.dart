@@ -1,23 +1,28 @@
+import 'package:chatbot_app/generated/l10n.dart';
+import 'package:flutter/material.dart';
+
 import 'models/onboarding_model.dart';
 import '../../../utils/app_assets.dart';
-
-List<OnboardingModel> onboardingList = [
-  const OnboardingModel(
+List<OnboardingModel> getOnboardingList(BuildContext context) {
+  return  [
+    OnboardingModel(
     image:AppAssets.onboardingFirstPage,
-    title: 'Welcome to your AI Companion',
+    title:  S.of(context).onBoardingFirstPageTitle,
     description:
-        'Our AI assistant designed to become your trusted companion in solving various tasks and issues.',
+        S.of(context).onBoardingFirstPageDescription,
   ),
-  const OnboardingModel(
+   OnboardingModel(
     image: AppAssets.onboardingSecondPage,
-    title: 'Smart and Quick Response',
+    title: S.of(context).onBoardingSecondPageTitle,
     description:
-        'Get fast, intelligent replies to your questions, anytime you need them.',
+        S.of(context).onBoardingSecondPageDescription,
   ),
-  const OnboardingModel(
+   OnboardingModel(
     image: AppAssets.onboardingThirdPage,
-    title: 'Chat, Learn and Explore',
+    title: S.of(context).onBoardingThirdPageTitle,
     description:
-        'Engage in meaningful coversations and discover insights tailored for you.',
+       S.of(context).onBoardingThirdPageDescription,
   ),
 ];
+}
+

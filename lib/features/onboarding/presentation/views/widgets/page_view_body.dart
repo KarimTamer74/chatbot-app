@@ -1,4 +1,5 @@
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/custom_elevated_button.dart';
+import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/constants.dart';
 import 'package:chatbot_app/utils/functions.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,7 @@ class _PageViewBodyState extends State<PageViewBody> {
         Expanded(
           flex: 1,
           child: Image.asset(
-            onboardingList[widget.index].image,
+           getOnboardingList(context)[widget.index].image,
             fit: BoxFit.fill,
           ),
         ),
@@ -41,7 +42,7 @@ class _PageViewBodyState extends State<PageViewBody> {
         ),
         currentIndex == 2
             ? CustomElevatedButton(
-                buttonText: 'Get Started',
+                buttonText: S.of(context).getStarted,
                 onPressed: () async {
                   await completeOnboardingView();
                   // ignore: use_build_context_synchronously
@@ -49,7 +50,7 @@ class _PageViewBodyState extends State<PageViewBody> {
                 },
               )
             : CustomElevatedButton(
-                buttonText: 'Continue',
+                buttonText:S.of(context).Continue,
                 onPressed: () {
                   setState(
                     () {
