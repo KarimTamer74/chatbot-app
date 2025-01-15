@@ -50,6 +50,66 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `Welcome to your AI Companion`
+  String get onBoardingFirstPageTitle {
+    return Intl.message(
+      'Welcome to your AI Companion',
+      name: 'onBoardingFirstPageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Our AI assistant designed to become your trusted companion in solving various tasks and issues.`
+  String get onBoardingFirstPageDescription {
+    return Intl.message(
+      'Our AI assistant designed to become your trusted companion in solving various tasks and issues.',
+      name: 'onBoardingFirstPageDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Smart and Quick Response`
+  String get onBoardingSecondPageTitle {
+    return Intl.message(
+      'Smart and Quick Response',
+      name: 'onBoardingSecondPageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get fast, intelligent replies to your questions, anytime you need them.`
+  String get onBoardingSecondPageDescription {
+    return Intl.message(
+      'Get fast, intelligent replies to your questions, anytime you need them.',
+      name: 'onBoardingSecondPageDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Chat, Learn and Explore`
+  String get onBoardingThirdPageTitle {
+    return Intl.message(
+      'Chat, Learn and Explore',
+      name: 'onBoardingThirdPageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Engage in meaningful coversations and discover insights tailored for you.`
+  String get onBoardingThirdPageDescription {
+    return Intl.message(
+      'Engage in meaningful coversations and discover insights tailored for you.',
+      name: 'onBoardingThirdPageDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Login`
   String get login {
     return Intl.message(
@@ -385,6 +445,96 @@ class S {
     return Intl.message(
       'Sign Out',
       name: 'signOut',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please wait...`
+  String get pleaseWait {
+    return Intl.message(
+      'please wait...',
+      name: 'pleaseWait',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login successfully`
+  String get loginSuccessfully {
+    return Intl.message(
+      'Login successfully',
+      name: 'loginSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout successfully`
+  String get logoutSuccessfully {
+    return Intl.message(
+      'Logout successfully',
+      name: 'logoutSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change language successfully`
+  String get changeLanguageSuccessfully {
+    return Intl.message(
+      'Change language successfully',
+      name: 'changeLanguageSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get started`
+  String get getStarted {
+    return Intl.message(
+      'Get started',
+      name: 'getStarted',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue`
+  String get Continue {
+    return Intl.message(
+      'Continue',
+      name: 'Continue',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to sign out?`
+  String get areYouSureToSignOut {
+    return Intl.message(
+      'Are you sure you want to sign out?',
+      name: 'areYouSureToSignOut',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `yes`
+  String get yes {
+    return Intl.message(
+      'yes',
+      name: 'yes',
       desc: '',
       args: [],
     );

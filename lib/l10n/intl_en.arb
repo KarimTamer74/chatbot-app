@@ -1,4 +1,10 @@
 {
+    "onBoardingFirstPageTitle":"Welcome to your AI Companion",
+    "onBoardingFirstPageDescription":"Our AI assistant designed to become your trusted companion in solving various tasks and issues.",
+    "onBoardingSecondPageTitle":"Smart and Quick Response",
+    "onBoardingSecondPageDescription":"Get fast, intelligent replies to your questions, anytime you need them.",
+    "onBoardingThirdPageTitle":"Chat, Learn and Explore",
+    "onBoardingThirdPageDescription":"Engage in meaningful coversations and discover insights tailored for you.",
     "login": "Login",
     "email": "Email",
     "password": "Password",
@@ -32,5 +38,14 @@
     "theme": "Theme",
     "aboutApp": "About App",
     "helpSupport": "Help & Support",
-    "signOut": "Sign Out"
+    "signOut": "Sign Out",
+    "pleaseWait":"please wait...",
+    "loginSuccessfully":"Login successfully",
+    "logoutSuccessfully":"Logout successfully",
+    "changeLanguageSuccessfully":"Change language successfully",
+    "getStarted":"Get started",
+    "Continue":"Continue",
+    "areYouSureToSignOut": "Are you sure you want to sign out?",
+    "cancel":"Cancel",
+    "yes":"yes"
 }

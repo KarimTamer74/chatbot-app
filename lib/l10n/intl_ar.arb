@@ -1,5 +1,10 @@
 {
-    
+    "onBoardingFirstPageTitle": "مرحباً بك في مساعد الذكاء الاصطناعي الخاص بك",
+    "onBoardingFirstPageDescription": "مساعدنا الذكي مصمم ليكون رفيقك الموثوق في حل مختلف المهام والمشاكل.",
+    "onBoardingSecondPageTitle": "استجابة ذكية وسريعة",
+    "onBoardingSecondPageDescription": "احصل على إجابات سريعة وذكية لأسئلتك في أي وقت تحتاجه.",
+    "onBoardingThirdPageTitle": "تحدث، تعلم واستكشف",
+    "onBoardingThirdPageDescription": "شارك في محادثات مفيدة واكتشف معلومات مصممة خصيصاً لك.",
     "login": "تسجيل الدخول",
     "email": "البريد الإلكتروني",
     "password": "كلمة المرور",
@@ -12,8 +17,8 @@
     "alreadyHaveAnAccount": "لديك حساب بالفعل؟",
     "donotHaveAnAccount": "لا تمتلك حسابًا؟",
     "thisFieldRequired": "هذا الحقل مطلوب",
-    "continueWithGoogle": "التسجيل باستخدام جوجل",
-    "continueWithPhone": "التسجيل باستخدام الهاتف",
+    "continueWithGoogle": "التسجيل عبر جوجل",
+    "continueWithPhone": "التسجيل عبر الهاتف",
     "orLoginWith": "   أو تسجيل الدخول باستخدام   "   ,
     "forgotPassword": "نسيت كلمة المرور",
     "rememberMe": "تذكرني",
@@ -33,8 +38,16 @@
     "theme": "الثيم",
     "aboutApp": "عن التطبيق",
     "helpSupport": "المساعدة والدعم",
-    "signOut": "تسجيل الخروج"
-    
-    
+    "signOut": "تسجيل الخروج",
+    "pleaseWait": "...يرجى الانتظار",
+    "loginSuccessfully":"تم تسجيل الدخول بنجاح",
+    "logoutSuccessfully":"تم تسجيل الخروج بنجاح",
+    "changeLanguageSuccessfully":"تم تغيير اللغة بنجاح",
+    "getStarted":"ابدء",
+    "Continue":"متابعة",
+    "areYouSureToSignOut": "هل تريد تسجيل الخروج؟",
+    "cancel":"إلغاء",
+    "yes":"نعم"
+
     
 }

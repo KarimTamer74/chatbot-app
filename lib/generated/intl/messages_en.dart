@@ -22,14 +22,20 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Continue": MessageLookupByLibrary.simpleMessage("Continue"),
         "aboutApp": MessageLookupByLibrary.simpleMessage("About App"),
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
+        "areYouSureToSignOut": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to sign out?"),
         "askGemini": MessageLookupByLibrary.simpleMessage("Ask Gemini"),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "changeLanguage":
             MessageLookupByLibrary.simpleMessage("Change Language"),
+        "changeLanguageSuccessfully": MessageLookupByLibrary.simpleMessage(
+            "Change language successfully"),
         "changeTheme": MessageLookupByLibrary.simpleMessage("Change Theme"),
         "chatbotApp": MessageLookupByLibrary.simpleMessage("Chatbot App"),
         "confirmPassword":
@@ -48,12 +54,30 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter your password"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
+        "getStarted": MessageLookupByLibrary.simpleMessage("Get started"),
         "helpSupport": MessageLookupByLibrary.simpleMessage("Help & Support"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "loginSuccessfully":
+            MessageLookupByLibrary.simpleMessage("Login successfully"),
+        "logoutSuccessfully":
+            MessageLookupByLibrary.simpleMessage("Logout successfully"),
+        "onBoardingFirstPageDescription": MessageLookupByLibrary.simpleMessage(
+            "Our AI assistant designed to become your trusted companion in solving various tasks and issues."),
+        "onBoardingFirstPageTitle": MessageLookupByLibrary.simpleMessage(
+            "Welcome to your AI Companion"),
+        "onBoardingSecondPageDescription": MessageLookupByLibrary.simpleMessage(
+            "Get fast, intelligent replies to your questions, anytime you need them."),
+        "onBoardingSecondPageTitle":
+            MessageLookupByLibrary.simpleMessage("Smart and Quick Response"),
+        "onBoardingThirdPageDescription": MessageLookupByLibrary.simpleMessage(
+            "Engage in meaningful coversations and discover insights tailored for you."),
+        "onBoardingThirdPageTitle":
+            MessageLookupByLibrary.simpleMessage("Chat, Learn and Explore"),
         "orLoginWith":
             MessageLookupByLibrary.simpleMessage("  or login with  "),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "pleaseWait": MessageLookupByLibrary.simpleMessage("please wait..."),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "recentChats": MessageLookupByLibrary.simpleMessage("Recent Chats"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("Remember Me"),
@@ -69,6 +93,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Tap the button to start a new conversation."),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "thisFieldRequired":
-            MessageLookupByLibrary.simpleMessage("This field is required.")
+            MessageLookupByLibrary.simpleMessage("This field is required."),
+        "yes": MessageLookupByLibrary.simpleMessage("yes")
       };
 }
