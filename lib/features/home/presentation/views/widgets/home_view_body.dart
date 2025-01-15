@@ -18,7 +18,6 @@ class HomeViewBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Spacer(),
-
             Icon(
               Icons.chat_bubble_outline,
               size: 100.sp,
@@ -30,10 +29,7 @@ class HomeViewBody extends StatelessWidget {
               textAlign: TextAlign.center,
               style: Styles.textStyleBold20,
             ),
-            // SizedBox(height: 250.h),
-            const Spacer(
-              
-            ),
+            const Spacer(),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, botView);
@@ -50,15 +46,7 @@ class HomeViewBody extends StatelessWidget {
                     color: AppColors.kWhiteColor,
                   )),
             ),
-            // SizedBox(height: 60.h),
-            // Text(
-            //   S.of(context).tapToStart,
-            //   textAlign: TextAlign.center,
-            //   style: Styles.greyTextStyle16.copyWith(
-            //     color: Colors.grey[600],
-            //     fontWeight: FontWeight.w500,
-            //   ),
-            // ),
+           
             const Spacer(),
           ],
         ),

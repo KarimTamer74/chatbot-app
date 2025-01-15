@@ -9,13 +9,14 @@ class SignInWithSocialCubit extends Cubit<SignInWithSocialState> {
   SignInWithSocialCubit() : super(SignInWithSocialInitialState());
 
   Future<void> signInWithGoogle() async {
-    emit(SignInWithSocialLoadingState());
+    emit(SignInWithSocialLoadingState(isSignInWithGoogle: true));
     try {
       await _loginWithGoogleSuccessfuly();
-      emit(SignInWithSocialSuccessState());
+      emit(SignInWithSocialSuccessState(isSignInWithGoogle: true));
     } catch (e) {
       emit(
-        SignInWithSocialFailureState(errorMessage: e.toString()),
+        SignInWithSocialFailureState(
+            errorMessage: e.toString(), isSignInWithGoogle: true),
       );
     }
   }
@@ -34,12 +35,13 @@ class SignInWithSocialCubit extends Cubit<SignInWithSocialState> {
   }
 
   Future<void> signInWithFacebook() async {
-    emit(SignInWithSocialLoadingState());
+    emit(SignInWithSocialLoadingState(isSignInWithGoogle: false));
     try {
       await _signInWithFacebookSuccessfully();
-      emit(SignInWithSocialSuccessState());
+      emit(SignInWithSocialSuccessState(isSignInWithGoogle: false));
     } catch (e) {
-      emit(SignInWithSocialFailureState(errorMessage: e.toString()));
+      emit(SignInWithSocialFailureState(
+          errorMessage: e.toString(), isSignInWithGoogle: false));
     }
   }
 

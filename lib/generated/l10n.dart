@@ -250,6 +250,16 @@ class S {
     );
   }
 
+  /// `Contiue with Facebook`
+  String get contiueWithFacebook {
+    return Intl.message(
+      'Contiue with Facebook',
+      name: 'contiueWithFacebook',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `  or login with  `
   String get orLoginWith {
     return Intl.message(

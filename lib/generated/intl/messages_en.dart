@@ -44,6 +44,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Continue with Google"),
         "continueWithPhone":
             MessageLookupByLibrary.simpleMessage("Continue with Phone"),
+        "contiueWithFacebook":
+            MessageLookupByLibrary.simpleMessage("Contiue with Facebook"),
         "donotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),

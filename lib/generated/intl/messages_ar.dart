@@ -43,6 +43,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("التسجيل عبر جوجل"),
         "continueWithPhone":
             MessageLookupByLibrary.simpleMessage("التسجيل عبر الهاتف"),
+        "contiueWithFacebook":
+            MessageLookupByLibrary.simpleMessage("التسجيل عبر فيسبوك"),
         "donotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("لا تمتلك حسابًا؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),

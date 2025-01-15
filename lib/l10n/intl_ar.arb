@@ -19,6 +19,7 @@
     "thisFieldRequired": "هذا الحقل مطلوب",
     "continueWithGoogle": "التسجيل عبر جوجل",
     "continueWithPhone": "التسجيل عبر الهاتف",
+    "contiueWithFacebook":"التسجيل عبر فيسبوك",
     "orLoginWith": "   أو تسجيل الدخول باستخدام   "   ,
     "forgotPassword": "نسيت كلمة المرور",
     "rememberMe": "تذكرني",
