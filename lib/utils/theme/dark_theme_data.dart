@@ -1,9 +1,31 @@
 import 'package:chatbot_app/utils/app_colors.dart';
 import 'package:chatbot_app/utils/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ThemeData getDarkTheme() {
   return ThemeData(
+    dialogTheme: DialogTheme(
+      iconColor: AppColors.kLightBlue,
+      backgroundColor: AppColors.kdarkGreyColor,
+      titleTextStyle: Styles.textStyleBold22,
+      contentTextStyle: Styles.greyTextStyle16,
+    ),
+    drawerTheme: DrawerThemeData(elevation: 0, width: 300.w),
+    listTileTheme: ListTileThemeData(
+      contentPadding: EdgeInsets.zero,
+      iconColor: AppColors.kWhiteColor,
+      textColor: AppColors.kWhiteColor,
+      subtitleTextStyle: Styles.greyTextStyle16,
+      titleTextStyle: Styles.textStyle18,
+    ),
+    appBarTheme: AppBarTheme(
+      elevation: 0,
+      centerTitle: true,
+      backgroundColor: AppColors.kdarkBlueColor,
+      titleTextStyle: Styles.textStyleBold24,
+      iconTheme: IconThemeData(size: 26.sp, color: AppColors.kWhiteColor),
+    ),
     primaryColorDark: AppColors.kPrimaryColor,
     scaffoldBackgroundColor: AppColors.kBlackColor,
     brightness: Brightness.dark,
@@ -17,7 +39,7 @@ ThemeData getDarkTheme() {
         borderRadius: BorderRadius.circular(16),
       ),
       behavior: SnackBarBehavior.floating,
-      width: 200,
+      width: double.infinity / 2,
       insetPadding: const EdgeInsets.all(8.0),
     ),
     textTheme: TextTheme(

@@ -27,11 +27,14 @@ abstract class Styles {
     color: Colors.white,
     fontSize: 18.sp,
   ); // regular font weight
-   static const textStyleBold20 =
+  static const textStyleBold20 =
       TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
   static const textStyleBold22 =
       TextStyle(fontSize: 22, fontWeight: FontWeight.bold);
-
+  static const textStyleBold24 =
+      TextStyle(fontSize: 24, fontWeight: FontWeight.bold);
+  static const textStyleBold26 =
+      TextStyle(fontSize: 26, fontWeight: FontWeight.bold);
   static TextStyle whiteTextStyle24 = TextStyle(
       fontSize: 24.sp, fontWeight: FontWeight.bold); // regular font weight
 }
