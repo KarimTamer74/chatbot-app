@@ -5,10 +5,19 @@ abstract class Styles {
   static const textStyle14 = TextStyle(fontSize: 14);
   static const textStyle22 = TextStyle(fontSize: 22);
   static const textStyle20 = TextStyle(fontSize: 20); // regular font weight
+  static TextStyle textStyleBold12 = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle textStyleBold14 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.bold,
+  );
   static TextStyle textStyle15 = TextStyle(
     fontSize: 15.sp,
     fontWeight: FontWeight.w500,
-  );  static TextStyle textStyleBold15 = TextStyle(
+  );
+  static TextStyle textStyleBold15 = TextStyle(
     fontSize: 15.sp,
     fontWeight: FontWeight.bold,
   ); //
