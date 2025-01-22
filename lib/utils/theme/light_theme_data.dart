@@ -5,6 +5,16 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ThemeData getLightTheme() {
   return ThemeData(
+    navigationBarTheme: NavigationBarThemeData(
+        overlayColor:
+            WidgetStatePropertyAll(AppColors.kdarkBlueColor.withOpacity(.5)),
+        labelTextStyle: WidgetStatePropertyAll(Styles.textStyleBold14),
+        iconTheme: WidgetStatePropertyAll(
+            IconThemeData(size: 26.sp, color: AppColors.kBlueColor)),
+        indicatorColor: AppColors.kdarkBlueColor.withOpacity(.05),
+        backgroundColor: AppColors.kBlueColor.withOpacity(0.05),
+        labelBehavior: NavigationDestinationLabelBehavior.alwaysShow),
+    textSelectionTheme: const TextSelectionThemeData(),
     dialogTheme: DialogTheme(
       backgroundColor: AppColors.kWhiteColor,
       titleTextStyle:

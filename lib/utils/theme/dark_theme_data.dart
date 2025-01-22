@@ -5,6 +5,18 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ThemeData getDarkTheme() {
   return ThemeData(
+    navigationBarTheme: NavigationBarThemeData(
+        overlayColor:
+            WidgetStatePropertyAll(AppColors.kdarkBlueColor.withOpacity(.2)),
+        labelTextStyle: WidgetStatePropertyAll(Styles.textStyleBold14),
+        iconTheme: WidgetStatePropertyAll(
+            IconThemeData(size: 26.sp, color: AppColors.kBlueColor)),
+        indicatorColor: AppColors.kdarkBlueColor.withOpacity(.1),
+        backgroundColor: AppColors.kBlueColor.withOpacity(0.05),
+        labelBehavior: NavigationDestinationLabelBehavior.alwaysShow),
+    textSelectionTheme: TextSelectionThemeData(
+      cursorColor: AppColors.kdeepPurple,
+    ),
     dialogTheme: DialogTheme(
       iconColor: AppColors.kLightBlue,
       backgroundColor: AppColors.kdarkGreyColor,
