@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Continue": MessageLookupByLibrary.simpleMessage("Continue"),
+        "about": MessageLookupByLibrary.simpleMessage("About"),
         "aboutApp": MessageLookupByLibrary.simpleMessage("About App"),
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
@@ -40,12 +41,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "chatbotApp": MessageLookupByLibrary.simpleMessage("Chatbot App"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
+        "contactUs": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "continueWithGoogle":
             MessageLookupByLibrary.simpleMessage("Continue with Google"),
         "continueWithPhone":
             MessageLookupByLibrary.simpleMessage("Continue with Phone"),
         "contiueWithFacebook":
             MessageLookupByLibrary.simpleMessage("Contiue with Facebook"),
+        "developer": MessageLookupByLibrary.simpleMessage("Developer"),
         "donotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
@@ -60,6 +63,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "getStarted": MessageLookupByLibrary.simpleMessage("Get started"),
         "helpSupport": MessageLookupByLibrary.simpleMessage("Help & Support"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginSuccessfully":
@@ -85,10 +89,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "Please enter your email address to recover your password."),
         "pleaseWait": MessageLookupByLibrary.simpleMessage("please wait..."),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "rateApp": MessageLookupByLibrary.simpleMessage("Rate App"),
         "recentChats": MessageLookupByLibrary.simpleMessage("Recent Chats"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("Remember Me"),
         "resetPassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+        "shareApp": MessageLookupByLibrary.simpleMessage("Share App"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
         "signOut": MessageLookupByLibrary.simpleMessage("Sign Out"),
         "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
@@ -99,9 +107,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Submit your password"),
         "tapToStart": MessageLookupByLibrary.simpleMessage(
             "Tap the button to start a new conversation."),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage("Terms & Conditions"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "thisFieldRequired":
             MessageLookupByLibrary.simpleMessage("This field is required."),
+        "version": MessageLookupByLibrary.simpleMessage("Version"),
         "yes": MessageLookupByLibrary.simpleMessage("Yes")
       };
 }

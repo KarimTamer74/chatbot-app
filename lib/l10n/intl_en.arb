@@ -52,5 +52,15 @@
     "emailAddress":"Email Address",
     "emptyEmail":"Empty Email",
     "resetPassword":"Reset Password",
-    "pleaseEnterYourEmailToRecoverYourPassword": "Please enter your email address to recover your password."
+    "pleaseEnterYourEmailToRecoverYourPassword": "Please enter your email address to recover your password.",
+    "home":"Home",
+    "settings":"Settings",
+    "about":"About",
+    "privacyPolicy":"Privacy Policy",
+    "termsAndConditions":"Terms & Conditions",
+    "contactUs":"Contact Us",
+    "version":"Version",    
+    "shareApp":"Share App",
+    "rateApp":"Rate App",
+    "developer":"Developer"
 }

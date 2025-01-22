@@ -23,9 +23,10 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Continue": MessageLookupByLibrary.simpleMessage("متابعة"),
+        "about": MessageLookupByLibrary.simpleMessage("حول"),
         "aboutApp": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
         "alreadyHaveAnAccount":
-            MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل؟"),
+            MessageLookupByLibrary.simpleMessage("هل لديك حساب بالفعل؟"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
         "areYouSureToSignOut":
             MessageLookupByLibrary.simpleMessage("هل تريد تسجيل الخروج؟"),
@@ -39,28 +40,30 @@ class MessageLookup extends MessageLookupByLibrary {
         "chatbotApp": MessageLookupByLibrary.simpleMessage("تطبيق الدردشة"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
+        "contactUs": MessageLookupByLibrary.simpleMessage("اتصل بنا"),
         "continueWithGoogle":
-            MessageLookupByLibrary.simpleMessage("التسجيل عبر جوجل"),
+            MessageLookupByLibrary.simpleMessage("التسجيل باستخدام جوجل"),
         "continueWithPhone":
-            MessageLookupByLibrary.simpleMessage("التسجيل عبر الهاتف"),
+            MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الهاتف"),
         "contiueWithFacebook":
-            MessageLookupByLibrary.simpleMessage("التسجيل عبر فيسبوك"),
+            MessageLookupByLibrary.simpleMessage("التسجيل باستخدام فيسبوك"),
         "donotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("لا تمتلك حسابًا؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "emailAddress":
-            MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+            MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "emptyEmail":
-            MessageLookupByLibrary.simpleMessage("البريد الالكتروني فارغ"),
-        "english": MessageLookupByLibrary.simpleMessage("English"),
+            MessageLookupByLibrary.simpleMessage("البريد الإلكتروني فارغ"),
+        "english": MessageLookupByLibrary.simpleMessage("الإنجليزية"),
         "enterYourEmail":
             MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
         "enterYourPassword":
             MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور"),
         "forgotPassword":
-            MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
-        "getStarted": MessageLookupByLibrary.simpleMessage("ابدء"),
+            MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+        "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ"),
         "helpSupport": MessageLookupByLibrary.simpleMessage("المساعدة والدعم"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginSuccessfully":
@@ -68,29 +71,31 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutSuccessfully":
             MessageLookupByLibrary.simpleMessage("تم تسجيل الخروج بنجاح"),
         "onBoardingFirstPageDescription": MessageLookupByLibrary.simpleMessage(
-            "مساعدنا الذكي مصمم ليكون رفيقك الموثوق في حل مختلف المهام والمشاكل."),
+            "تم تصميم مساعدنا الذكي ليكون رفيقك الموثوق به في حل مختلف المهام والمشكلات."),
         "onBoardingFirstPageTitle": MessageLookupByLibrary.simpleMessage(
             "مرحباً بك في مساعد الذكاء الاصطناعي الخاص بك"),
         "onBoardingSecondPageDescription": MessageLookupByLibrary.simpleMessage(
-            "احصل على إجابات سريعة وذكية لأسئلتك في أي وقت تحتاجه."),
+            "احصل على إجابات ذكية وسريعة لأسئلتك في أي وقت تحتاج فيه ذلك."),
         "onBoardingSecondPageTitle":
             MessageLookupByLibrary.simpleMessage("استجابة ذكية وسريعة"),
         "onBoardingThirdPageDescription": MessageLookupByLibrary.simpleMessage(
-            "شارك في محادثات مفيدة واكتشف معلومات مصممة خصيصاً لك."),
+            "شارك في محادثات مفيدة واكتشف معلومات مخصصة لك."),
         "onBoardingThirdPageTitle":
             MessageLookupByLibrary.simpleMessage("تحدث، تعلم واستكشف"),
-        "orLoginWith": MessageLookupByLibrary.simpleMessage(
-            "   أو تسجيل الدخول باستخدام   "),
+        "orLoginWith":
+            MessageLookupByLibrary.simpleMessage("أو تسجيل الدخول باستخدام"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "pleaseEnterYourEmailToRecoverYourPassword":
             MessageLookupByLibrary.simpleMessage(
-                "برجاء ادخال بريدك الالكتروني لاستعادة كلمة المرور"),
-        "pleaseWait": MessageLookupByLibrary.simpleMessage("...يرجى الانتظار"),
+                "يرجى إدخال بريدك الإلكتروني لاستعادة كلمة المرور"),
+        "pleaseWait": MessageLookupByLibrary.simpleMessage("يرجى الانتظار..."),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "recentChats": MessageLookupByLibrary.simpleMessage("الدردشات الأخيرة"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("تذكرني"),
         "resetPassword":
             MessageLookupByLibrary.simpleMessage("استعادة كلمة المرور"),
+        "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "signUp": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
@@ -101,6 +106,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "tapToStart": MessageLookupByLibrary.simpleMessage(
             "اضغط على الزر لبدء محادثة جديدة."),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage("الشروط والاحكام"),
         "theme": MessageLookupByLibrary.simpleMessage("الثيم"),
         "thisFieldRequired":
             MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
