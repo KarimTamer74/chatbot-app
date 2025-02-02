@@ -49,6 +49,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام فيسبوك"),
         "donotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("لا تمتلك حسابًا؟"),
+        "editProfile":
+            MessageLookupByLibrary.simpleMessage("تعديل الملف الشخصي"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "emailAddress":
             MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
@@ -57,19 +59,27 @@ class MessageLookup extends MessageLookupByLibrary {
         "english": MessageLookupByLibrary.simpleMessage("الإنجليزية"),
         "enterYourEmail":
             MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
+        "enterYourFirstName":
+            MessageLookupByLibrary.simpleMessage("أدخل اسمك الأول"),
+        "enterYourLastName":
+            MessageLookupByLibrary.simpleMessage("أدخل اسمك الأخير"),
         "enterYourPassword":
             MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور"),
+        "female": MessageLookupByLibrary.simpleMessage("انثى"),
+        "firstName": MessageLookupByLibrary.simpleMessage("الاسم الأول"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
         "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ"),
         "helpSupport": MessageLookupByLibrary.simpleMessage("المساعدة والدعم"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "language": MessageLookupByLibrary.simpleMessage("اللغة"),
+        "lastName": MessageLookupByLibrary.simpleMessage("الاسم الأخير"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginSuccessfully":
             MessageLookupByLibrary.simpleMessage("تم تسجيل الدخول بنجاح"),
         "logoutSuccessfully":
             MessageLookupByLibrary.simpleMessage("تم تسجيل الخروج بنجاح"),
+        "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "onBoardingFirstPageDescription": MessageLookupByLibrary.simpleMessage(
             "تم تصميم مساعدنا الذكي ليكون رفيقك الموثوق به في حل مختلف المهام والمشكلات."),
         "onBoardingFirstPageTitle": MessageLookupByLibrary.simpleMessage(
@@ -91,11 +101,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "pleaseWait": MessageLookupByLibrary.simpleMessage("يرجى الانتظار..."),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+        "rateApp": MessageLookupByLibrary.simpleMessage("تقييم التطبيق"),
         "recentChats": MessageLookupByLibrary.simpleMessage("الدردشات الأخيرة"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("تذكرني"),
         "resetPassword":
             MessageLookupByLibrary.simpleMessage("استعادة كلمة المرور"),
+        "saveChanges": MessageLookupByLibrary.simpleMessage("حفظ التغييرات"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
+        "shareApp": MessageLookupByLibrary.simpleMessage("مشاركة التطبيق"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "signUp": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
@@ -111,6 +124,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "theme": MessageLookupByLibrary.simpleMessage("الثيم"),
         "thisFieldRequired":
             MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
+        "version": MessageLookupByLibrary.simpleMessage("الإصدار"),
         "yes": MessageLookupByLibrary.simpleMessage("نعم")
       };
 }

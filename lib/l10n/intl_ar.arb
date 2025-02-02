@@ -36,6 +36,7 @@
     "back": "رجوع",
     "recentChats": "الدردشات الأخيرة",
     "profile": "الملف الشخصي",
+    "editProfile": "تعديل الملف الشخصي",
     "theme": "الثيم",
     "aboutApp": "عن التطبيق",
     "helpSupport": "المساعدة والدعم",
@@ -58,5 +59,16 @@
     "about": "حول",
     "privacyPolicy": "سياسة الخصوصية",
     "termsAndConditions": "الشروط والاحكام",
-    "contactUs": "اتصل بنا"
+    "contactUs": "اتصل بنا",
+    "version": "الإصدار",
+    "shareApp": "مشاركة التطبيق",
+    "rateApp": "تقييم التطبيق",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "enterYourFirstName": "أدخل اسمك الأول",
+    "enterYourLastName": "أدخل اسمك الأخير",
+    "saveChanges": "حفظ التغييرات",
+    "male":"ذكر",
+    "female":"انثى"
+
 }

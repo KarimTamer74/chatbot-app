@@ -51,25 +51,34 @@ class MessageLookup extends MessageLookupByLibrary {
         "developer": MessageLookupByLibrary.simpleMessage("Developer"),
         "donotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
+        "editProfile": MessageLookupByLibrary.simpleMessage("Edit Profile"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
         "emptyEmail": MessageLookupByLibrary.simpleMessage("Empty Email"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "enterYourEmail":
             MessageLookupByLibrary.simpleMessage("Enter your email"),
+        "enterYourFirstName":
+            MessageLookupByLibrary.simpleMessage("Enter your first name"),
+        "enterYourLastName":
+            MessageLookupByLibrary.simpleMessage("Enter your last name"),
         "enterYourPassword":
             MessageLookupByLibrary.simpleMessage("Enter your password"),
+        "female": MessageLookupByLibrary.simpleMessage("Female"),
+        "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "getStarted": MessageLookupByLibrary.simpleMessage("Get started"),
         "helpSupport": MessageLookupByLibrary.simpleMessage("Help & Support"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
+        "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginSuccessfully":
             MessageLookupByLibrary.simpleMessage("Login successfully"),
         "logoutSuccessfully":
             MessageLookupByLibrary.simpleMessage("Logout successfully"),
+        "male": MessageLookupByLibrary.simpleMessage("Male"),
         "onBoardingFirstPageDescription": MessageLookupByLibrary.simpleMessage(
             "Our AI assistant designed to become your trusted companion in solving various tasks and issues."),
         "onBoardingFirstPageTitle": MessageLookupByLibrary.simpleMessage(
@@ -85,6 +94,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "orLoginWith":
             MessageLookupByLibrary.simpleMessage("  or login with  "),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
         "pleaseEnterYourEmailToRecoverYourPassword":
             MessageLookupByLibrary.simpleMessage(
                 "Please enter your email address to recover your password."),
@@ -95,6 +105,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "recentChats": MessageLookupByLibrary.simpleMessage("Recent Chats"),
         "rememberMe": MessageLookupByLibrary.simpleMessage("Remember Me"),
         "resetPassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "saveChanges": MessageLookupByLibrary.simpleMessage("Save Changes"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "shareApp": MessageLookupByLibrary.simpleMessage("Share App"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),

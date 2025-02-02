@@ -36,6 +36,7 @@
     "back": "Back",
     "recentChats": "Recent Chats",
     "profile": "Profile",
+    "editProfile": "Edit Profile",
     "theme": "Theme",
     "aboutApp": "About App",
     "helpSupport": "Help & Support",
@@ -62,5 +63,13 @@
     "version":"Version",    
     "shareApp":"Share App",
     "rateApp":"Rate App",
-    "developer":"Developer"
+    "developer":"Developer",
+    "firstName":"First Name",
+    "lastName":"Last Name",
+    "enterYourFirstName":"Enter your first name",
+    "enterYourLastName":"Enter your last name",
+    "phoneNumber":"Phone Number",
+    "saveChanges":"Save Changes",
+    "male":"Male",
+    "female":"Female"
 }
