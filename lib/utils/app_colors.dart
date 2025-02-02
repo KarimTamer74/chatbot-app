@@ -9,10 +9,10 @@ class AppColors {
   static Color kLightBlue = const Color(0xFF0084FF);
   static Color kWhiteColor = Colors.white;
   static Color kGreyColor = Colors.grey;
+  static Color kGreyColor300 = Colors.grey[300]!;
   static Color kdarkGreyColor = const Color(0xFF343434);
   static Color kdeepPurple = Colors.deepPurple;
   static Color kdeepPurpleAccent = Colors.deepPurpleAccent;
-
 
 //* blue colors
   static Color kBlueShade50 = const Color(0xFFE3F2FD);
