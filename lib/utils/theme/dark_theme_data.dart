@@ -10,7 +10,7 @@ ThemeData getDarkTheme() {
             WidgetStatePropertyAll(AppColors.kdarkBlueColor.withOpacity(.2)),
         labelTextStyle: WidgetStatePropertyAll(Styles.textStyleBold14),
         iconTheme: WidgetStatePropertyAll(
-            IconThemeData(size: 26.sp, color: AppColors.kBlueColor)),
+            IconThemeData(size: 26.sp, color: AppColors.kIndigoShade400)),
         indicatorColor: AppColors.kdarkBlueColor.withOpacity(.1),
         backgroundColor: AppColors.kBlueColor.withOpacity(0.05),
         labelBehavior: NavigationDestinationLabelBehavior.alwaysShow),
@@ -34,7 +34,7 @@ ThemeData getDarkTheme() {
     appBarTheme: AppBarTheme(
       elevation: 0,
       centerTitle: true,
-      backgroundColor: AppColors.kdarkBlueColor,
+      backgroundColor: AppColors.kIndigoShade900,
       titleTextStyle: Styles.textStyleBold24,
       iconTheme: IconThemeData(size: 26.sp, color: AppColors.kWhiteColor),
     ),
@@ -95,14 +95,21 @@ ThemeData getDarkTheme() {
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(color: AppColors.kBlueColor),
+          borderSide: BorderSide(color: AppColors.kIndigoShade400),
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(color: AppColors.kBlueColor),
+          borderSide: BorderSide(color: AppColors.kIndigoShade400),
         ),
         hintStyle: Styles.greyTextStyle16,
         prefixIconColor: AppColors.kBlueColor,
         labelStyle: Styles.textStyle16),
+    toggleButtonsTheme: ToggleButtonsThemeData(
+      selectedBorderColor: AppColors.kBlackColor,
+      selectedColor: AppColors.kWhiteColor,
+      color: AppColors.kWhiteColor,
+      fillColor: AppColors.kIndigoShade900,
+      borderRadius: BorderRadius.circular(50.r),
+    ),
   );
 }

@@ -10,7 +10,7 @@ ThemeData getLightTheme() {
             WidgetStatePropertyAll(AppColors.kdarkBlueColor.withOpacity(.5)),
         labelTextStyle: WidgetStatePropertyAll(Styles.textStyleBold14),
         iconTheme: WidgetStatePropertyAll(
-            IconThemeData(size: 26.sp, color: AppColors.kBlueColor)),
+            IconThemeData(size: 26.sp, color: AppColors.kIndigoShade700)),
         indicatorColor: AppColors.kdarkBlueColor.withOpacity(.05),
         backgroundColor: AppColors.kBlueColor.withOpacity(0.05),
         labelBehavior: NavigationDestinationLabelBehavior.alwaysShow),
@@ -33,7 +33,7 @@ ThemeData getLightTheme() {
     appBarTheme: AppBarTheme(
       elevation: 0,
       centerTitle: true,
-      backgroundColor: AppColors.kdarkBlueColor,
+      backgroundColor: AppColors.kIndigoShade900,
       titleTextStyle:
           Styles.textStyleBold24.copyWith(color: AppColors.kWhiteColor),
       iconTheme: IconThemeData(size: 26.sp, color: AppColors.kWhiteColor),
@@ -91,18 +91,26 @@ ThemeData getLightTheme() {
     inputDecorationTheme: InputDecorationTheme(
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(color: AppColors.kButtonColor),
+          borderSide: BorderSide(color: AppColors.kBlueShade900),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(color: AppColors.kBlueColor),
+          borderSide: BorderSide(color: AppColors.kBlueShade800),
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(color: AppColors.kBlueColor),
+          borderSide: BorderSide(color: AppColors.kBlueShade800),
         ),
         hintStyle: Styles.greyTextStyle16,
         prefixIconColor: AppColors.kBlueColor,
         labelStyle: Styles.textStyle16),
+    toggleButtonsTheme: ToggleButtonsThemeData(
+      selectedBorderColor: AppColors.kBlackColor,
+      selectedColor: AppColors.kWhiteColor,
+      borderWidth: 2,
+      color: AppColors.kBlackColor,
+      fillColor: AppColors.kIndigoShade500,
+      borderRadius: BorderRadius.circular(50.r),
+    ),
   );
 }
