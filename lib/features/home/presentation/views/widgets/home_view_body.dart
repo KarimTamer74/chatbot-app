@@ -12,7 +12,7 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: appPadding,
+        padding: AppConstants.appPadding,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -32,7 +32,7 @@ class HomeViewBody extends StatelessWidget {
             const Spacer(),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, botView);
+                Navigator.pushNamed(context, AppConstants.botView);
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.kdarkBlueColor,

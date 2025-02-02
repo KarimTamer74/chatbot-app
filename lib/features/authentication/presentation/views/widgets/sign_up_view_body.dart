@@ -16,12 +16,12 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: appPadding,
+      padding: AppConstants.appPadding,
       child: BlocConsumer<SignUpCubit, SignUpState>(
         listener: (context, state) {
           if (state is SignUpSuccessState) {
             showSnackBar(context, 'Account created successfully✔️.');
-            Navigator.pushNamed(context, homeView);
+            Navigator.pushNamed(context, AppConstants.homeView);
           } else if (state is SignUpFailureState) {
             showSnackBar(context, state.errorMessage);
           } else if (state is SignUpLoadingState) {

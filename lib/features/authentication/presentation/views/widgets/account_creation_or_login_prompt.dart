@@ -28,7 +28,7 @@ class AccountCreationOrLoginPrompt extends StatelessWidget {
         TextButton(
           onPressed: () {
             if (textButton == S.of(context).signUp) {
-              Navigator.pushNamed(context, signUpView);
+              Navigator.pushNamed(context, AppConstants.signUpView);
             } else if (textButton == S.of(context).signIn) {
               Navigator.pop(context);
             }

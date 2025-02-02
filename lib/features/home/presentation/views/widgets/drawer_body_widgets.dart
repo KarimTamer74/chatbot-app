@@ -1,5 +1,4 @@
 import 'package:chatbot_app/features/authentication/presentation/view_model/sign_out/sign_out_cubit.dart';
-import 'package:chatbot_app/features/authentication/presentation/views/widgets/sign_in_build_widgets.dart';
 import 'package:chatbot_app/features/home/presentation/views/widgets/custom_drawer_list_tile.dart';
 import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/common_widgets/change_theme_widget.dart';
@@ -24,7 +23,7 @@ class DrawerBodyWidgets extends StatelessWidget {
         title: S.of(context).profile,
         icon: Icons.person,
         onTap: () {
-          Navigator.pushNamed(context, profileView);
+          Navigator.pushNamed(context, AppConstants.profileView);
         },
       ),
       CustomDrawerListTile(
@@ -35,7 +34,7 @@ class DrawerBodyWidgets extends StatelessWidget {
         title: S.of(context).aboutApp,
         icon: Icons.info,
         onTap: () {
-          Navigator.pushNamed(context, aboutApp);
+          Navigator.pushNamed(context, AppConstants.aboutApp);
         },
       ),
       CustomDrawerListTile(
@@ -66,12 +65,12 @@ class DrawerBodyWidgets extends StatelessWidget {
             listener: (context, state) {
               if (state is SignOutSuccessState) {
                 signOutCompleted();
-                Navigator.pushReplacementNamed(context, signInView);
+                Navigator.pushReplacementNamed(context, AppConstants.signInView);
               } else if (state is SignOutFailureState) {
                 showSnackBar(context, state.errorMessage);
               } else if (state is SignOutLoadingState) {
-                   const Center(
-                  child:  CircularProgressIndicator(),
+                const Center(
+                  child: CircularProgressIndicator(),
                 );
               }
             },

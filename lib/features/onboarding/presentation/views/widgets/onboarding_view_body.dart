@@ -22,7 +22,7 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: appPadding,
+      padding: AppConstants.appPadding,
       child: Column(
         children: [
            Row(

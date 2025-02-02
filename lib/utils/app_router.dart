@@ -12,32 +12,32 @@ import 'constants.dart';
 class AppRouter {
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
-      case onboardingView:
+      case AppConstants.onboardingView:
         return MaterialPageRoute(
           builder: (context) => const OnboardingView(),
         );
 
-      case homeView:
+      case AppConstants.homeView:
         return MaterialPageRoute(
           builder: (context) => const HomeView(),
         );
 
-      case signInView:
+      case AppConstants.signInView:
         return MaterialPageRoute(
           builder: (context) => const SignInView(),
         );
 
-      case signUpView:
+      case AppConstants.signUpView:
         return MaterialPageRoute(
           builder: (context) => const SignUpView(),
         );
-      case botView:
+      case AppConstants.botView:
         return MaterialPageRoute(
           builder: (context) => const BotView(),
-        );case profileView:
+        );case AppConstants.profileView:
         return MaterialPageRoute(
           builder: (context) => const ProfileView(),
-        );case aboutApp:
+        );case AppConstants.aboutApp:
         return MaterialPageRoute(
           builder: (context) => const AboutAppView(),
         );

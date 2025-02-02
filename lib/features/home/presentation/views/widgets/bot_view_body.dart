@@ -61,7 +61,7 @@ class _BotViewBodyState extends State<BotViewBody> {
   Future<void> sendMessage() async {
     final model = GenerativeModel(
       model: 'gemini-1.5-flash-latest',
-      apiKey: googleApiKey,
+      apiKey: AppConstants.googleApiKey,
     );
     String message = addUserMessageInList();
     await addBotMessageInList(message, model);

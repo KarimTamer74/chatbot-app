@@ -23,7 +23,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: appPadding,
+          padding: AppConstants.appPadding,
           child: Form(
             key: key,
             child: BlocListener<ResetPasswordCubit, ResetPasswordState>(
@@ -44,7 +44,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                     log("Loading");
                   }
                 },
-                child: const ResetPasswordBody()),
+                child: const ResetPasswordBody(),),
           ),
         ),
       ),

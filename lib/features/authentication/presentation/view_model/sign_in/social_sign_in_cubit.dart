@@ -41,7 +41,7 @@ class SignInWithSocialCubit extends Cubit<SignInWithSocialState> {
       emit(SignInWithSocialSuccessState(isSignInWithGoogle: false));
     } catch (e) {
       emit(SignInWithSocialFailureState(
-          errorMessage: e.toString(), isSignInWithGoogle: false));
+          errorMessage: "error please try again", isSignInWithGoogle: false));
     }
   }
 

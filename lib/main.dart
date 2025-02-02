@@ -9,14 +9,13 @@ import 'package:path_provider/path_provider.dart';
 import 'firebase_options.dart';
 
 void main() async {
-  
   await _initializeApp();
   runApp(const ChatbotApp());
 }
 
 Future<void> _initializeApp() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(                        
+  await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
   HydratedBloc.storage = await HydratedStorage.build(

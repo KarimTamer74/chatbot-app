@@ -15,7 +15,7 @@ class _BotViewState extends State<BotView> {
     return const SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: appPadding,
+          padding: AppConstants.appPadding,
           child: BotViewBody(),
         ),
       ),

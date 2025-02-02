@@ -23,7 +23,7 @@ class _SignInViewBodyState extends State<SignInViewBody> {
         if (state is SignInSuccessState) {
           showSnackBar(context, S.of(context).loginSuccessfully);
           signInCompleted();
-          Navigator.pushReplacementNamed(context, homeView);
+          Navigator.pushReplacementNamed(context, AppConstants.homeView);
         }
         if (state is SignInFailureState) {
           showSnackBar(context, state.errorMessage);

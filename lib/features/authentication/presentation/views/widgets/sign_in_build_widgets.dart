@@ -46,7 +46,7 @@ class _SignInBuildWidgetsState extends State<SignInBuildWidgets> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: appPadding,
+      padding: AppConstants.appPadding,
       child: Form(
         key: signInformKey,
         child: SingleChildScrollView(

@@ -32,7 +32,7 @@ class OtherLoginWays extends StatelessWidget {
               Logger().d("in google User signed in successfully.");
               showSnackBar(context, S.of(context).loginSuccessfully);
               signInCompleted();
-              Navigator.pushNamed(context, homeView);
+              Navigator.pushNamed(context, AppConstants.homeView);
             }
             if (state is SignInWithSocialFailureState &&
                 state.isSignInWithGoogle) {
@@ -65,7 +65,7 @@ class OtherLoginWays extends StatelessWidget {
               Logger().d("in facebook User signed in successfully.");
               showSnackBar(context, S.of(context).loginSuccessfully);
               signInCompleted();
-              Navigator.pushNamed(context, homeView);
+              Navigator.pushNamed(context, AppConstants.homeView);
             }
             if (state is SignInWithSocialFailureState &&
                 !state.isSignInWithGoogle) {

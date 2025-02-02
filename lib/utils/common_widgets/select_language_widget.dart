@@ -35,11 +35,11 @@ class SelectLanguageWidget extends StatelessWidget {
       },
       itemBuilder: (BuildContext context) => [
         PopupMenuItem(
-          value: englishKey,
+          value: AppConstants.englishKey,
           child: Text(S.of(context).english, style: Styles.textStyle16),
         ),
         PopupMenuItem(
-          value: arabicKey,
+          value: AppConstants.arabicKey,
           child: Text(S.of(context).arabic, style: Styles.textStyle20),
         ),
       ],

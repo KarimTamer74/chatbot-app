@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 
 class AppLocaleCubit extends HydratedCubit<Locale> {
-  AppLocaleCubit() : super(const Locale(englishKey));
+  AppLocaleCubit() : super(const Locale(AppConstants.englishKey));
 
   void changeAppLocale(Locale locale) {
     log('Locale changed to ${locale.languageCode}');
@@ -14,23 +14,23 @@ class AppLocaleCubit extends HydratedCubit<Locale> {
 
   @override
   Locale? fromJson(Map<String, dynamic> json) {
-    if (json[localKey] == englishKey) {
-      return const Locale(englishKey);
-    } else if (json[localKey] == arabicKey) {
-      return const Locale(arabicKey);
+    if (json[AppConstants.localKey] == AppConstants.englishKey) {
+      return const Locale(AppConstants.englishKey);
+    } else if (json[AppConstants.localKey] == AppConstants.arabicKey) {
+      return const Locale(AppConstants.arabicKey);
     } else {
-      return const Locale(englishKey);
+      return const Locale(AppConstants.englishKey);
     }
   }
 
   @override
   Map<String, dynamic>? toJson(Locale state) {
-    if (state == const Locale(englishKey)) {
-      return {localKey: englishKey};
-    } else if ((state == const Locale(arabicKey))) {
-      return {localKey: arabicKey};
+    if (state == const Locale(AppConstants.englishKey)) {
+      return {AppConstants.localKey: AppConstants.englishKey};
+    } else if ((state == const Locale(AppConstants.arabicKey))) {
+      return {AppConstants.localKey: AppConstants.arabicKey};
     } else {
-      return {localKey: englishKey};
+      return {AppConstants.localKey: AppConstants.englishKey};
     }
   }
 }

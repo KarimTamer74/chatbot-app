@@ -25,7 +25,7 @@ class _PageViewBodyState extends State<PageViewBody> {
         Expanded(
           flex: 1,
           child: Image.asset(
-           getOnboardingList(context)[widget.index].image,
+            getOnboardingList(context)[widget.index].image,
             fit: BoxFit.fill,
           ),
         ),
@@ -46,11 +46,12 @@ class _PageViewBodyState extends State<PageViewBody> {
                 onPressed: () async {
                   await completeOnboardingView();
                   // ignore: use_build_context_synchronously
-                  Navigator.of(context).pushReplacementNamed(signInView);
+                  Navigator.of(context)
+                      .pushReplacementNamed(AppConstants.signInView);
                 },
               )
             : CustomElevatedButton(
-                buttonText:S.of(context).Continue,
+                buttonText: S.of(context).Continue,
                 onPressed: () {
                   setState(
                     () {

@@ -8,4 +8,5 @@ class AppAssets {
   static const phoneAvatar = 'assets/images/phone.png';
   static const facebookAvatar = 'assets/images/facebook.png';
   static const userImage = 'assets/images/user_image.jpg';
+  static const my = 'assets/images/my.jpg';
 }

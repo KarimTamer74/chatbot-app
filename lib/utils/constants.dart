@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 
-const onboardingView = '/';
-const homeView = '/home';
-const signInView = '/signin';
-const signUpView = '/signup';
-const signOut = '/signout';
-const botView = '/botView';
-const isSignInKey = 'isSignIn';
-const isShowedOnboardingViewKey = 'isShowedOnboardingView';
-const EdgeInsetsGeometry appPadding = EdgeInsets.fromLTRB(20, 30, 20, 30);
-const String localKey = "localKey";
-const String arabicKey = "ar";
-const String englishKey = "en";
-const String googleApiKey = 'AIzaSyAOTNs7RAYxHTvmFb-tWpi4vqRJYFpd0kU';
-const String profileView= "profileView";
-const String aboutApp= "aboutApp";
+class AppConstants {
+  static const onboardingView = '/';
+  static const homeView = '/home';
+  static const signInView = '/signin';
+  static const signUpView = '/signup';
+  static const signOut = '/signout';
+  static const botView = '/botView';
+  static const isSignInKey = 'isSignIn';
+  static const isShowedOnboardingViewKey = 'isShowedOnboardingView';
+  static const EdgeInsetsGeometry appPadding =
+       EdgeInsets.fromLTRB(20, 30, 20, 30);
+  static const String localKey = "localKey";
+  static const String arabicKey = "ar";
+  static const String englishKey = "en";
+  static const String googleApiKey = 'AIzaSyAOTNs7RAYxHTvmFb-tWpi4vqRJYFpd0kU';
+  static const String profileView = "profileView";
+  static const String aboutApp = "aboutApp";
+  static const String male = "Male";
+  static const String female = "Female";
+}
