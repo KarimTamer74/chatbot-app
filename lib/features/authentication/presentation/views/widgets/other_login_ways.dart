@@ -50,7 +50,7 @@ class OtherLoginWays extends StatelessWidget {
               text: S.of(context).continueWithGoogle,
               onPressed: () {
                 BlocProvider.of<SignInWithSocialCubit>(context)
-                    .signInWithGoogle();
+                    .signInWithGoogle(context);
               },
             );
           },
