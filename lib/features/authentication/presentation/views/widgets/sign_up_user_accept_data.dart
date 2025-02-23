@@ -23,6 +23,7 @@ class SignUpUserAcceptData extends StatelessWidget {
           hintText: S.of(context).enterYourEmail,
           iconData: Icons.email,
           controller: emailController,
+          isValidateEmail: true,
         ),
         SizedBox(
           height: 10.h,
@@ -32,6 +33,7 @@ class SignUpUserAcceptData extends StatelessWidget {
           hintText: S.of(context).enterYourPassword,
           iconData: Icons.lock,
           controller: passwordController,
+          isValidatePass: true,
         ),
         SizedBox(
           height: 10.h,
@@ -40,6 +42,7 @@ class SignUpUserAcceptData extends StatelessWidget {
           labelText: S.of(context).confirmPassword,
           hintText: S.of(context).confirmPassword,
           iconData: Icons.lock,
+          isValidatePass: true,
           controller: passwordConfirmationController,
         ),
       ],
