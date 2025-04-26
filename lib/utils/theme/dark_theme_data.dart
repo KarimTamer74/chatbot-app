@@ -23,7 +23,7 @@ ThemeData getDarkTheme() {
       titleTextStyle: Styles.textStyleBold22,
       contentTextStyle: Styles.greyTextStyle16,
     ),
-    drawerTheme: DrawerThemeData(elevation: 0, width: 300.w),
+    drawerTheme: DrawerThemeData(elevation: 0, width: 300.w,),
     listTileTheme: ListTileThemeData(
       contentPadding: EdgeInsets.zero,
       iconColor: AppColors.kWhiteColor,

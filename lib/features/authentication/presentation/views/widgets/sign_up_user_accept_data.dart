@@ -18,6 +18,44 @@ class SignUpUserAcceptData extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        Row(
+          children: [
+            Expanded(
+              child: CustomTextFormField(
+                labelText: "First Name",
+                hintText: "Enter Your First Name",
+                iconData: Icons.person,
+                controller: emailController,
+                isValidateEmail: true,
+              ),
+            ),
+            SizedBox(
+              width: 10.w,
+            ),
+            Expanded(
+              child: CustomTextFormField(
+                labelText: "Last Name",
+                hintText: "Enter Your Last Name",
+                iconData: Icons.person,
+                controller: emailController,
+                isValidateEmail: true,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 15.h,
+        ),
+        CustomTextFormField(
+          labelText: S.of(context).phoneNumber,
+          hintText: "Enter Your Phone Number",
+          iconData: Icons.phone,
+          controller: emailController,
+          isValidateEmail: true,
+        ),
+        SizedBox(
+          height: 15.h,
+        ),
         CustomTextFormField(
           labelText: S.of(context).email,
           hintText: S.of(context).enterYourEmail,
@@ -26,7 +64,7 @@ class SignUpUserAcceptData extends StatelessWidget {
           isValidateEmail: true,
         ),
         SizedBox(
-          height: 10.h,
+          height: 15.h,
         ),
         CustomTextFormField(
           labelText: S.of(context).password,
@@ -36,7 +74,7 @@ class SignUpUserAcceptData extends StatelessWidget {
           isValidatePass: true,
         ),
         SizedBox(
-          height: 10.h,
+          height: 15.h,
         ),
         CustomTextFormField(
           labelText: S.of(context).confirmPassword,

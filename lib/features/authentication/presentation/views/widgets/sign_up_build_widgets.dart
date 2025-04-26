@@ -3,7 +3,6 @@ import 'package:chatbot_app/features/authentication/presentation/views/widgets/a
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/custom_elevated_button.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/sign_up_user_accept_data.dart';
 import 'package:chatbot_app/generated/l10n.dart';
-import 'package:chatbot_app/utils/app_assets.dart';
 import 'package:chatbot_app/utils/common_widgets/show_snackbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -48,9 +47,15 @@ class _SignUpBuildWidgetsState extends State<SignUpBuildWidgets> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              AppAssets.signInAsset,
-              fit: BoxFit.fill,
+            SizedBox(
+              height: 32.h,
+            ),
+            Text(
+              "Create Account",
+              style: TextStyle(
+                fontSize: 32.sp,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             SizedBox(
               height: 40.h,
@@ -61,7 +66,7 @@ class _SignUpBuildWidgetsState extends State<SignUpBuildWidgets> {
               passwordConfirmationController: passwordConfirmationController,
             ),
             SizedBox(
-              height: 20.h,
+              height: 30.h,
             ),
             CustomElevatedButton(
               buttonText: S.of(context).signUp,

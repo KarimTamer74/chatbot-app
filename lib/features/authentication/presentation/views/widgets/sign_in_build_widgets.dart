@@ -6,7 +6,6 @@ import 'package:chatbot_app/features/authentication/presentation/views/widgets/c
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/other_login_ways.dart';
 import 'package:chatbot_app/features/authentication/presentation/views/widgets/remember_and_forget_pass.dart';
 import 'package:chatbot_app/generated/l10n.dart';
-import 'package:chatbot_app/utils/app_assets.dart';
 import 'package:chatbot_app/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -53,11 +52,21 @@ class _SignInBuildWidgetsState extends State<SignInBuildWidgets> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                AppAssets.signInAsset,
-                fit: BoxFit.fill,
-                height: 150.h,
+              SizedBox(
+                height: 32.h,
               ),
+              Text(
+                "Welcome Back!",
+                style: TextStyle(
+                  fontSize: 32.sp,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              // Image.asset(
+              //   AppAssets.signInAsset,
+              //   fit: BoxFit.fill,
+              //   height: 150.h,
+              // ),
               SizedBox(
                 height: 34.h,
               ),
