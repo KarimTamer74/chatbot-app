@@ -34,9 +34,9 @@
 
 ---
 
-<!-- ## 🎥 **App Demo**
+## 🎥 **App Demo**
 Check out the app demo video:  
-[**Watch Video**](https://drive.google.com/file/d/10FTWhLGPklyj8HhzSsS0LBU33u1IPDSR/view?usp=drive_link) -->
+[**Watch Video**](https://drive.google.com/file/d/10FTWhLGPklyj8HhzSsS0LBU33u1IPDSR/view?usp=drive_link)
 
 ---
 

@@ -1,4 +1,3 @@
-
 import 'package:chatbot_app/features/authentication/presentation/view_model/sign_in/sign_in_cubit.dart';
 import 'package:chatbot_app/features/home/presentation/views/home_view.dart';
 import 'package:chatbot_app/utils/functions.dart';
@@ -15,26 +14,23 @@ class SignInView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: FutureBuilder(
-            future: checkSignIn(),
-            builder: (context, snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Center(
-                  child: CircularProgressIndicator(),
-                );
-              }
-              if (snapshot.data == null || snapshot.data == true) {
-                return  HomeView();
-              }
-              return BlocProvider(
-                create: (context) => SignInCubit(),
-                child: const SignInViewBody(),
+          future: checkSignIn(),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const Center(
+                child: CircularProgressIndicator(),
               );
-            },),
+            }
+            if (snapshot.data == null || snapshot.data == true) {
+              return const HomeView();
+            }
+            return BlocProvider(
+              create: (context) => SignInCubit(),
+              child: const SignInViewBody(),
+            );
+          },
+        ),
       ),
     );
   }
-
-
 }
-
-

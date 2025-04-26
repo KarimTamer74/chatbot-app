@@ -1,7 +1,6 @@
+import 'package:chatbot_app/features/home/presentation/views/home_view.dart';
 import 'package:chatbot_app/features/home/presentation/views/profile_view.dart';
-import 'package:chatbot_app/features/home/presentation/views/widgets/home_view_body.dart';
 import 'package:chatbot_app/features/home/presentation/views/widgets/settings_view.dart';
-import 'package:chatbot_app/main_view.dart';
 import 'package:flutter/material.dart';
 
 List<StatelessWidget> getBottomNavBarBody() {
@@ -10,11 +9,10 @@ List<StatelessWidget> getBottomNavBarBody() {
     const SettingsView(),
 
     ///* Home page
-    const HomeViewBody(),
+    const HomeView(),
 
     //* Pofile page
     const ProfileView(),
-    const MainView(),
   ];
 }
 // Notifications page
