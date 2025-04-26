@@ -39,16 +39,8 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
           icon: const Icon(Icons.person_outlined),
           label: S.of(context).profile,
         ),
-        NavigationDestination(
-          selectedIcon: const Icon(Icons.abc),
-          icon: const Icon(Icons.abc),
-          label: S.of(context).male,
-        ),
+       
       ],
     );
   }
 }
- // const NavigationDestination(
-        //   icon: Badge(child: Icon(Icons.notifications_sharp)),
-        //   label: 'Notifications',
-        // ),
