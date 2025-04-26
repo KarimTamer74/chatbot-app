@@ -1,3 +1,4 @@
+import 'package:chatbot_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -41,6 +42,9 @@ abstract class Styles {
   static TextStyle whiteTextStyle18 = TextStyle(
     color: Colors.white,
     fontSize: 18.sp,
+  );  static TextStyle whiteTextStyle20 = TextStyle(
+    color: Colors.white,
+    fontSize: 20.sp,
   ); // regular font weight
   static final textStyleBold20 =
       TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold);
@@ -50,8 +54,10 @@ abstract class Styles {
       TextStyle(fontSize: 24.sp, fontWeight: FontWeight.bold);
   static final textStyleBold26 =
       TextStyle(fontSize: 26.sp, fontWeight: FontWeight.bold);
-  static TextStyle whiteTextStyle24 =
-      TextStyle(fontSize: 24.sp, fontWeight: FontWeight.bold);
+  static TextStyle whiteTextStyle24 = TextStyle(
+      fontSize: 24.sp,
+      fontWeight: FontWeight.bold,
+      color: AppColors.kWhiteColor);
   static TextStyle textStyleBold32 = TextStyle(
     fontSize: 32.sp,
     fontWeight: FontWeight.bold,

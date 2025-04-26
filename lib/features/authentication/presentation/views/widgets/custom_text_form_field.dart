@@ -32,10 +32,10 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         style: Styles.textStyle16,
         controller: widget.controller,
         validator: (value) {
-          if (widget.isValidatePass == true) {
+          if (widget.isValidateEmail == true) {
             return Validator.validateEmail(value!, context);
           }
-          if (widget.isValidateEmail == true) {
+          if (widget.isValidatePass == true) {
             return Validator.validatePassword(value!, context);
           }
 

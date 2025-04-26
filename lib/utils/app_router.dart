@@ -19,7 +19,7 @@ class AppRouter {
 
       case AppConstants.homeView:
         return MaterialPageRoute(
-          builder: (context) => const HomeView(),
+          builder: (context) =>  HomeView(),
         );
 
       case AppConstants.signInView:

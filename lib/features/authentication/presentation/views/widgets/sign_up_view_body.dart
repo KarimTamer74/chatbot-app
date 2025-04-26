@@ -21,7 +21,7 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
         listener: (context, state) {
           if (state is SignUpSuccessState) {
             showSnackBar(context, 'Account created successfully✔️.');
-            Navigator.pushNamed(context, AppConstants.homeView);
+            Navigator.pushReplacementNamed(context, AppConstants.homeView);
           } else if (state is SignUpFailureState) {
             showSnackBar(context, state.errorMessage);
           } else if (state is SignUpLoadingState) {

@@ -56,6 +56,7 @@ class _SignInBuildWidgetsState extends State<SignInBuildWidgets> {
               Image.asset(
                 AppAssets.signInAsset,
                 fit: BoxFit.fill,
+                height: 150.h,
               ),
               SizedBox(
                 height: 34.h,

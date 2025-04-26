@@ -23,7 +23,7 @@ class SignInView extends StatelessWidget {
                 );
               }
               if (snapshot.data == null || snapshot.data == true) {
-                return const HomeView();
+                return  HomeView();
               }
               return BlocProvider(
                 create: (context) => SignInCubit(),
