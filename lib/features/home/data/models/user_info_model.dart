@@ -2,7 +2,7 @@ import 'dart:io';
 
 class UserInfoModel {
   final String email, firstName, lastName,gender;
-  final File? userImage;
+  final String? userImage;
 
 
   UserInfoModel(

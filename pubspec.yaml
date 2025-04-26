@@ -33,6 +33,7 @@ dependencies:
   logger: ^2.4.0
   path_provider: ^2.1.5
   shared_preferences: ^2.3.2
+  supabase_flutter: ^2.8.4
   video_player: ^2.9.2
 
 dev_dependencies:

@@ -5,6 +5,7 @@ import 'package:chatbot_app/generated/l10n.dart';
 import 'package:chatbot_app/utils/common_widgets/show_snackbar_widget.dart';
 import 'package:chatbot_app/utils/constants.dart';
 import 'package:chatbot_app/utils/functions.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -22,7 +23,9 @@ class _SignInViewBodyState extends State<SignInViewBody> {
       listener: (context, state) {
         if (state is SignInSuccessState) {
           showSnackBar(context, S.of(context).loginSuccessfully);
+
           signInCompleted();
+          
           Navigator.pushReplacementNamed(context, AppConstants.homeView);
         }
         if (state is SignInFailureState) {
@@ -39,4 +42,6 @@ class _SignInViewBodyState extends State<SignInViewBody> {
       },
     );
   }
+
+
 }
