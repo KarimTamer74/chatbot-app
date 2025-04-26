@@ -2,7 +2,6 @@
 
 ![Chatbot Demo](app_design/onboarding_shots.png)
 
-<<<<<<< HEAD
 ![Chatbot Demo](app_design/auth_shots.png)
 
 ![Chatbot Demo](app_design/profile_shots.png)
@@ -25,27 +24,6 @@
 
 ---
 
-=======
-![Chatbot Demo](app_design/shots.png)
-
-> **Chatbot App** allows you to interact with **Gemini** AI, providing intelligent responses to your queries. The app also features both **Light** and **Dark modes**, as well as support for multiple languages, including **Arabic** and **English**.  
-> The app supports **Sign In**, **Sign Up**, and **Password Reset** functionality, along with **Google** and **Facebook Sign-In** options.  
-> Additionally, the app includes a beautiful **Onboarding experience** for first-time users.
-
----
-
-## ✨ **Features**
-- Chat with **Gemini** AI and receive intelligent responses.
-- **Light Mode** and **Dark Mode** support for user preference.
-- Supports multiple languages: **Arabic** and **English**.
-- **Sign In**, **Sign Up**, and **Forgot Password** functionality.
-- **Sign In with Google** and **Facebook** for easy access.
-- Localized for multiple regions and languages using **flutter_localizations**.
-- **Onboarding** screens for a smooth introduction to the app experience.
-
----
-
->>>>>>> d61db010fde44e51cc92c0e610c87cebafa4210f
 ## 🛠 **Tech Stack**
 - ![Flutter](https://img.shields.io/badge/Flutter-3.13+-blue?logo=flutter)
 - ![Dart](https://img.shields.io/badge/Dart-3.1+-blue?logo=dart)
@@ -59,15 +37,9 @@
 
 ---
 
-<<<<<<< HEAD
 ## 🎥 **App Demo**
 Check out the app demo video:  
 [**Watch Video**](https://drive.google.com/file/d/10FTWhLGPklyj8HhzSsS0LBU33u1IPDSR/view?usp=drive_link)
-=======
-<!-- ## 🎥 **App Demo**
-Check out the app demo video:  
-[**Watch Video**](https://drive.google.com/file/d/10FTWhLGPklyj8HhzSsS0LBU33u1IPDSR/view?usp=drive_link) -->
->>>>>>> d61db010fde44e51cc92c0e610c87cebafa4210f
 
 ---
 
