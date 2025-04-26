@@ -2,7 +2,10 @@
 
 ![Chatbot Demo](app_design/onboarding_shots.png)
 
-![Chatbot Demo](app_design/shots.png)
+![Chatbot Demo](app_design/auth_shots.png)
+
+![Chatbot Demo](app_design/profile_shots.png)
+
 
 > **Chatbot App** allows you to interact with **Gemini** AI, providing intelligent responses to your queries. The app also features both **Light** and **Dark modes**, as well as support for multiple languages, including **Arabic** and **English**.  
 > The app supports **Sign In**, **Sign Up**, and **Password Reset** functionality, along with **Google** and **Facebook Sign-In** options.  
