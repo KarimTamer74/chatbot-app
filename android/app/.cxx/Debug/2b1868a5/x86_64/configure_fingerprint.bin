@@ -2,6 +2,7 @@ C/C++ Structured Loge
 c
 aC:\Users\moham\Downloads\scr\flutter\packages\flutter_tools\gradle\src\main\groovy\CMakeLists.txtC
 A
+<<<<<<< HEAD
 ?com.android.build.gradle.internal.cxx.io.EncodedFileFingerPrint	”Ìã™ç2§ €¤óÓÖ2^
 \
 ZD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\additional_project_files.txt	”Ìã™ç2 øŽÚ™ç2[
@@ -26,3 +27,29 @@ R
 PD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\prefab_config.json	”Ìã™ç2( üŽÚ™ç2Y
 W
 UD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\symbol_folder_index.txt	”Ìã™ç2L ýŽÚ™ç2
+=======
+?com.android.build.gradle.internal.cxx.io.EncodedFileFingerPrint	¹ç‘˜ç2§ €¤óÓÖ2^
+\
+ZD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\additional_project_files.txt	¹ç‘˜ç2 ³ç‘˜ç2[
+Y
+WD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\android_gradle_build.json	»ç‘˜ç2¬ µç‘˜ç2`
+^
+\D:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\android_gradle_build_mini.json	»ç‘˜ç2‡ ¶ç‘˜ç2M
+K
+ID:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\build.ninja	»ç‘˜ç2½Õ †ç‘˜ç2Q
+O
+MD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\build.ninja.txt	»ç‘˜ç2V
+T
+RD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\build_file_index.txt	»ç‘˜ç2a ¹ç‘˜ç2W
+U
+SD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\compile_commands.json	»ç‘˜ç2	[
+Y
+WD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\compile_commands.json.bin	»ç‘˜ç2
+a
+_
+]D:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\metadata_generation_command.txt	»ç‘˜ç2¬ ¸ç‘˜ç2T
+R
+PD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\prefab_config.json	»ç‘˜ç2( ¸ç‘˜ç2Y
+W
+UD:\Flutter\chatbot_app\android\app\.cxx\Debug\2b1868a5\x86_64\symbol_folder_index.txt	»ç‘˜ç2L ¹ç‘˜ç2
+>>>>>>> d61db010fde44e51cc92c0e610c87cebafa4210f

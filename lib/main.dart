@@ -1,5 +1,5 @@
+import 'package:chatbot_app/features/home/presentation/views/home_view.dart';
 import 'package:chatbot_app/keys.dart';
-import 'package:chatbot_app/main_view.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +41,7 @@ class ChatbotApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return const MainView();
+        return const HomeView();
       },
     );
   }
